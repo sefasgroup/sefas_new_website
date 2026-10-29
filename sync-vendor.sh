@@ -18,6 +18,7 @@ KEEP=(
   ".github/workflows/cpanel-package.yml"
   "DEPLOY-CPANEL.md"
   "sync-vendor.sh"
+  ".gitattributes"
 )
 
 cd "$HERE"

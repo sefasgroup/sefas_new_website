@@ -1,14 +1,15 @@
 # Deploy ke cPanel (tanpa akses terminal)
 
-Repo ini (`sefasgroup/sefas_new_website`) adalah **salinan kode website dari repo vendor** `sefasgroup/sefas-landing`, ditambah tiga file milik SEFAS sendiri:
+Repo ini (`sefasgroup/sefas_new_website`) adalah **salinan kode website dari repo vendor** `sefasgroup/sefas-landing`, ditambah beberapa file milik SEFAS sendiri:
 
 | File | Fungsi |
 |---|---|
 | `.github/workflows/cpanel-package.yml` | Membuat paket zip siap upload ke cPanel |
 | `sync-vendor.sh` | Menyalin versi terbaru dari repo vendor ke repo ini |
 | `DEPLOY-CPANEL.md` | Panduan ini |
+| `.gitattributes` | Menjaga `sync-vendor.sh` tetap memakai line ending LF |
 
-Selain tiga file itu, semua file di sini adalah salinan dari vendor. **Jangan ubah kode website di repo ini**: perubahan akan tertimpa pada sync berikutnya. Perubahan kode diminta ke vendor. `VENDOR_COMMIT.txt` mencatat commit vendor yang sedang tersalin.
+Selain file-file itu, semua file di sini adalah salinan dari vendor. **Jangan ubah kode website di repo ini**: perubahan akan tertimpa pada sync berikutnya. Perubahan kode diminta ke vendor. `VENDOR_COMMIT.txt` mencatat commit vendor yang sedang tersalin.
 
 ## 0. Ambil versi terbaru dari vendor
 
