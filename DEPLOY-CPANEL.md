@@ -1,22 +1,30 @@
-# sefas-landing-deploy
-
-Repo ini hanya berisi workflow build dan panduan deploy untuk website SEFAS Group. **Tidak ada kode website di sini.** Kode diambil langsung dari repo vendor `sefasgroup/sefas-landing` saat build, dengan token read-only. Tidak ada yang ditulis ke repo vendor.
-
-## Setup awal (sekali saja)
-
-1. **Buat token read-only** di GitHub: *Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token*.
-   - Resource owner: `sefasgroup`
-   - Repository access: *Only select repositories* → `sefasgroup/sefas-landing`
-   - Permissions → Repository permissions → **Contents: Read-only** (Metadata otomatis read-only). Permission lain tidak perlu.
-   - Atur masa berlaku (misalnya 1 tahun) dan catat tanggalnya. Kalau organisasi `sefasgroup` mewajibkan persetujuan token, owner organisasi harus meng-approve token ini dulu.
-2. **Simpan token sebagai secret** di repo ini: *Settings → Secrets and variables → Actions → New repository secret*, dengan nama `SOURCE_REPO_TOKEN` dan nilai token dari langkah 1.
-3. Pastikan GitHub Actions aktif di repo ini (tab *Actions*).
-
-Kalau token kedaluwarsa, langkah *Checkout source repository* akan gagal. Buat token baru, lalu ganti nilai secret `SOURCE_REPO_TOKEN`.
-
----
-
 # Deploy ke cPanel (tanpa akses terminal)
+
+Repo ini (`sefasgroup/sefas_new_website`) adalah **salinan kode website dari repo vendor** `sefasgroup/sefas-landing`, ditambah tiga file milik SEFAS sendiri:
+
+| File | Fungsi |
+|---|---|
+| `.github/workflows/cpanel-package.yml` | Membuat paket zip siap upload ke cPanel |
+| `sync-vendor.sh` | Menyalin versi terbaru dari repo vendor ke repo ini |
+| `DEPLOY-CPANEL.md` | Panduan ini |
+
+Selain tiga file itu, semua file di sini adalah salinan dari vendor. **Jangan ubah kode website di repo ini**: perubahan akan tertimpa pada sync berikutnya. Perubahan kode diminta ke vendor. `VENDOR_COMMIT.txt` mencatat commit vendor yang sedang tersalin.
+
+## 0. Ambil versi terbaru dari vendor
+
+Lakukan di PC, lewat Git Bash. Repo vendor ada di `C:laragonwwwsefas-landing` dan repo ini di `C:laragonwwwsefas-deploy`.
+
+```bash
+cd /c/laragon/www/sefas-deploy
+git pull
+bash sync-vendor.sh main      # atau: bash sync-vendor.sh develop
+git show --stat               # cek file yang berubah
+git push
+```
+
+Script hanya membaca repo vendor (`git fetch` dan `git archive`), tidak pernah menulis ke sana. Yang disalin hanya file yang tercatat di git vendor, jadi `.env`, `node_modules` dan `.next` tidak ikut. File yang dihapus vendor juga ikut terhapus di sini. Kalau tidak ada perubahan, script berhenti tanpa membuat commit.
+
+Workflow CI bawaan vendor (`.github/workflows/main.yml`) ikut tersalin. Workflow itu berjalan otomatis setiap kali ada push ke `main`, untuk lint, typecheck dan build. Workflow ini hanya memeriksa kode, tidak men-deploy, dan berguna untuk melihat bahwa versi yang disalin bisa di-build.
 
 Panduan ini untuk hosting cPanel yang **tidak** menyediakan terminal/SSH. Semua langkah di server dilakukan lewat **File Manager** dan menu **Setup Node.js App**. Home folder akun: `/home/sefasgro`.
 
@@ -52,10 +60,8 @@ Paket sengaja diletakkan di subfolder `app/`. CloudLinux Node.js Selector tidak 
 
 ## 1. Buat paket di GitHub
 
-1. Buka repo **ini** (bukan repo vendor) di GitHub → tab **Actions** → workflow **cPanel Package**.
-2. Klik **Run workflow**, lalu isi:
-   - `ref`: branch/tag/commit repo vendor yang mau di-build. Production memakai `main`.
-   - `site_url`: `https://sefasgroup.com` untuk production, atau alamat staging (misalnya `https://staging.sefasgroup.com`).
+1. Buka repo ini di GitHub → tab **Actions** → workflow **cPanel Package**.
+2. Klik **Run workflow** (branch `main`), lalu isi `site_url`: `https://sefasgroup.com` untuk production, atau alamat staging (misalnya `https://staging.sefasgroup.com`).
 3. Tunggu sampai selesai (beberapa menit). Workflow juga menjalankan uji singkat: paket dinyalakan dan `/api/health`, `/`, `/id` serta `/robots.txt` harus membalas 200. Setelah itu, di halaman run tersebut unduh artifact **sefas-landing-cpanel-&lt;nomor&gt;**. Hasilnya satu file `.zip` berisi folder `app/`.
 
 `site_url` ditanam saat build. Mengganti domain berarti membuat paket baru, tidak cukup restart.

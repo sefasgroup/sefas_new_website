@@ -1,22 +1,15 @@
 name: cPanel Package
 
-# Builds sefasgroup/sefas-landing on Linux and uploads a ready-to-run package
-# for a cPanel "Setup Node.js App" host without terminal access.
-# The source repository is only read; nothing is written to it. It does not deploy.
+# Builds the vendor code mirrored in this repo (see sync-vendor.sh) on Linux and
+# uploads a ready-to-run package for a cPanel "Setup Node.js App" host without
+# terminal access. It does not deploy.
 on:
   workflow_dispatch:
     inputs:
-      ref:
-        description: "Branch, tag or commit of sefasgroup/sefas-landing to build"
-        required: true
-        default: "main"
       site_url:
         description: "NEXT_PUBLIC_SITE_URL baked into the build (no trailing slash)"
         required: true
         default: "https://sefasgroup.com"
-
-env:
-  SOURCE_REPO: sefasgroup/sefas-landing
 
 jobs:
   package:
@@ -24,12 +17,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          repository: ${{ env.SOURCE_REPO }}
-          ref: ${{ inputs.ref }}
-          token: ${{ secrets.SOURCE_REPO_TOKEN }}
           persist-credentials: false
 
       - name: Setup pnpm
@@ -54,7 +44,6 @@ jobs:
       - name: Assemble package
         env:
           SITE_URL: ${{ inputs.site_url }}
-          REF: ${{ inputs.ref }}
         run: |
           mkdir -p package
           cp -r .next/standalone package/app
@@ -67,9 +56,8 @@ jobs:
             exit 1
           fi
           {
-            echo "source: $SOURCE_REPO"
-            echo "ref: $REF"
-            echo "commit: $(git rev-parse HEAD)"
+            sed 's/^/vendor_/' VENDOR_COMMIT.txt
+            echo "repo_commit: $(git rev-parse HEAD)"
             echo "site_url: $SITE_URL"
             echo "built: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           } > package/app/DEPLOY_INFO.txt
