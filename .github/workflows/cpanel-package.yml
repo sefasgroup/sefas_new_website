@@ -1,0 +1,100 @@
+name: cPanel Package
+
+# Builds sefasgroup/sefas-landing on Linux and uploads a ready-to-run package
+# for a cPanel "Setup Node.js App" host without terminal access.
+# The source repository is only read; nothing is written to it. It does not deploy.
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch, tag or commit of sefasgroup/sefas-landing to build"
+        required: true
+        default: "main"
+      site_url:
+        description: "NEXT_PUBLIC_SITE_URL baked into the build (no trailing slash)"
+        required: true
+        default: "https://sefasgroup.com"
+
+env:
+  SOURCE_REPO: sefasgroup/sefas-landing
+
+jobs:
+  package:
+    name: Build cPanel package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.SOURCE_REPO }}
+          ref: ${{ inputs.ref }}
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          persist-credentials: false
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".node-version"
+          cache: "pnpm"
+
+      # Hoisted layout: the standalone node_modules then has no symlinks, which
+      # cPanel File Manager does not reliably keep when extracting a zip.
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile --config.node-linker=hoisted
+
+      - name: Build
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ inputs.site_url }}
+        run: pnpm build
+
+      - name: Assemble package
+        env:
+          SITE_URL: ${{ inputs.site_url }}
+          REF: ${{ inputs.ref }}
+        run: |
+          mkdir -p package
+          cp -r .next/standalone package/app
+          cp -r .next/static package/app/.next/static
+          cp -r public package/app/public
+          rm -f package/app/.env package/app/.env.*
+          if [ -n "$(find package/app -type l)" ]; then
+            echo "::error::Symlinks found in the package"
+            find package/app -type l
+            exit 1
+          fi
+          {
+            echo "source: $SOURCE_REPO"
+            echo "ref: $REF"
+            echo "commit: $(git rev-parse HEAD)"
+            echo "site_url: $SITE_URL"
+            echo "built: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          } > package/app/DEPLOY_INFO.txt
+          cat package/app/DEPLOY_INFO.txt
+
+      - name: Smoke test
+        working-directory: package/app
+        run: |
+          PORT=3000 HOSTNAME=0.0.0.0 node server.js > "$RUNNER_TEMP/server.log" 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fs http://127.0.0.1:3000/api/health > /dev/null && break
+            sleep 1
+          done
+          for path in /api/health / /id /robots.txt; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:3000$path")
+            echo "$path -> $code"
+            [ "$code" = 200 ] || { cat "$RUNNER_TEMP/server.log"; exit 1; }
+          done
+          kill %1
+          rm -rf .next/cache
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: sefas-landing-cpanel-${{ github.run_number }}
+          path: package/
+          include-hidden-files: true
+          retention-days: 30
