@@ -10,6 +10,10 @@ on:
         description: "NEXT_PUBLIC_SITE_URL baked into the build (no trailing slash)"
         required: true
         default: "https://sefasgroup.com"
+      noindex:
+        description: "Staging/preview only: send X-Robots-Tag noindex (never for production)"
+        type: boolean
+        default: false
 
 jobs:
   package:
@@ -36,14 +40,18 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --config.node-linker=hoisted
 
+      # next.config.ts reads ROBOTS_NOINDEX when the headers are compiled, so with
+      # standalone output it only takes effect at build time, not in the cPanel env.
       - name: Build
         env:
           NEXT_PUBLIC_SITE_URL: ${{ inputs.site_url }}
+          ROBOTS_NOINDEX: ${{ inputs.noindex && '1' || '' }}
         run: pnpm build
 
       - name: Assemble package
         env:
           SITE_URL: ${{ inputs.site_url }}
+          NOINDEX: ${{ inputs.noindex }}
         run: |
           mkdir -p package
           cp -r .next/standalone package/app
@@ -59,6 +67,7 @@ jobs:
             sed 's/^/vendor_/' VENDOR_COMMIT.txt
             echo "repo_commit: $(git rev-parse HEAD)"
             echo "site_url: $SITE_URL"
+            echo "noindex: $NOINDEX"
             echo "built: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           } > package/app/DEPLOY_INFO.txt
           cat package/app/DEPLOY_INFO.txt

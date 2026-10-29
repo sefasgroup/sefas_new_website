@@ -63,6 +63,7 @@ Paket sengaja diletakkan di subfolder `app/`. CloudLinux Node.js Selector tidak 
 
 1. Buka repo ini di GitHub → tab **Actions** → workflow **cPanel Package**.
 2. Klik **Run workflow** (branch `main`), lalu isi `site_url`: `https://sefasgroup.com` untuk production, atau alamat staging (misalnya `https://staging.sefasgroup.com`).
+   - Centang **noindex** hanya untuk staging atau preview. Pilihan ini membuat mesin pencari tidak mengindeks salinan tersebut. **Jangan dicentang untuk production**, atau sefasgroup.com hilang dari hasil pencarian Google.
 3. Tunggu sampai selesai (beberapa menit). Workflow juga menjalankan uji singkat: paket dinyalakan dan `/api/health`, `/`, `/id` serta `/robots.txt` harus membalas 200. Setelah itu, di halaman run tersebut unduh artifact **sefas-landing-cpanel-&lt;nomor&gt;**. Hasilnya satu file `.zip` berisi folder `app/`.
 
 `site_url` ditanam saat build. Mengganti domain berarti membuat paket baru, tidak cukup restart.
@@ -102,7 +103,10 @@ Tambahkan **Environment variables** (tombol *Add Variable*):
 | `MAIL_PASSWORD` | password / App Password | rahasia |
 | `MAIL_FROM_ADDRESS` | alamat pengirim | |
 | `MAIL_RECIPIENT` | inbox penerima pesan form | |
-| `ROBOTS_NOINDEX` | `1` | **Hanya untuk staging.** Jangan diisi di production, atau sefasgroup.com hilang dari hasil pencarian Google. |
+
+`ROBOTS_NOINDEX` **tidak** diisi di sini. Variabel itu hanya berlaku saat build, jadi kalau diisi di cPanel tidak berpengaruh apa pun. Untuk staging, pakai pilihan **noindex** saat menjalankan workflow (langkah 1).
+
+Semua variabel di atas baru terbaca setelah aplikasi di-**Restart**. Menyimpan saja tidak cukup.
 
 Lalu klik **Create**, kemudian **Start App** atau **Restart**.
 
