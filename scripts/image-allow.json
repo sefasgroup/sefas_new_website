@@ -1,0 +1,76 @@
+[
+ {
+  "path": "public/images/og/og-en.jpg",
+  "reason": "Open Graph URL already shared externally",
+  "expires": "2027-02-08"
+ },
+ {
+  "path": "public/images/og/og-id.jpg",
+  "reason": "Open Graph URL already shared externally",
+  "expires": "2027-02-08"
+ },
+ {
+  "path": "public/videos/promise/field.jpg",
+  "reason": "Statement clip poster, kept for a planned component",
+  "expires": null
+ },
+ {
+  "path": "public/videos/promise/monitoring.jpg",
+  "reason": "Statement clip poster, kept for a planned component",
+  "expires": null
+ },
+ {
+  "path": "public/videos/promise/training.jpg",
+  "reason": "Statement clip poster, kept for a planned component",
+  "expires": null
+ },
+ {
+  "path": "public/images/brand/img-career-folds.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/crew/img-construction.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/crew/img-industry-agriculture.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/crew/img-manufacturing.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/crew/img-milestone-coolant.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/crew/img-oil-pour.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/crew/img-power.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/crew/img-products-range.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/og/img-og-warehouse.jpg",
+  "reason": "unreferenced, kept until the content owner confirms it can go",
+  "expires": null
+ },
+ {
+  "path": "public/images/brand/img-laurel-gold.webp",
+  "reason": "Awards no longer shows the laurels; kept until the content owner confirms it can go"
+ }
+]

@@ -1,0 +1,11 @@
+:root {
+  --brand-surface: #f7f7f5;
+  --brand-ink: #010101;
+  --brand-accent: #f36c21;
+  --brand-on-accent: #ffffff;
+  --brand-negative: #ef4444;
+  --brand-radius: 0.125rem;
+  --brand-font: var(--font-roboto), sans-serif;
+  --brand-map-water: #010101;
+  --brand-map-land: #2a2d31;
+}

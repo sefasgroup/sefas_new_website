@@ -1,0 +1,757 @@
+[
+ {
+  "from": "public/images/brand/career-folds.jpg",
+  "to": "public/images/brand/img-career-folds.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/brand/laurel-gold.webp",
+  "to": "public/images/brand/img-laurel-gold.webp",
+  "refs": 2
+ },
+ {
+  "from": "public/images/brand/sefas-logo.png",
+  "to": "public/images/brand/img-sefas-logo.png",
+  "refs": 3
+ },
+ {
+  "from": "public/images/brand/sefas-logo-white.png",
+  "to": "public/images/brand/img-sefas-logo-white.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/brand/sefas-mark.png",
+  "to": "public/images/brand/img-sefas-mark.png",
+  "refs": 1
+ },
+ {
+  "from": "public/images/brand/shell-licensee-white.png",
+  "to": "public/images/brand/img-shell-licensee-white.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/brand/shell-lubricants-distributor-white.png",
+  "to": "public/images/brand/img-shell-lubricants-distributor-white.png",
+  "refs": 1
+ },
+ {
+  "from": "public/images/brand/shell-pecten.svg",
+  "to": "public/images/brand/img-shell-pecten.svg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/brand/splash/a.webp",
+  "to": "public/images/brand/splash/img-splash-letter-a.webp",
+  "refs": 0
+ },
+ {
+  "from": "public/images/brand/splash/e.webp",
+  "to": "public/images/brand/splash/img-splash-letter-e.webp",
+  "refs": 0
+ },
+ {
+  "from": "public/images/brand/splash/f.webp",
+  "to": "public/images/brand/splash/img-splash-letter-f.webp",
+  "refs": 0
+ },
+ {
+  "from": "public/images/brand/splash/hand-a.webp",
+  "to": "public/images/brand/splash/img-splash-hand-a.webp",
+  "refs": 1
+ },
+ {
+  "from": "public/images/brand/splash/hand-b.webp",
+  "to": "public/images/brand/splash/img-splash-hand-b.webp",
+  "refs": 1
+ },
+ {
+  "from": "public/images/brand/splash/s1.webp",
+  "to": "public/images/brand/splash/img-splash-letter-s1.webp",
+  "refs": 0
+ },
+ {
+  "from": "public/images/brand/splash/s2.webp",
+  "to": "public/images/brand/splash/img-splash-letter-s2.webp",
+  "refs": 0
+ },
+ {
+  "from": "public/images/certifications/iso-14001.webp",
+  "to": "public/images/certifications/img-iso-14001.webp",
+  "refs": 1
+ },
+ {
+  "from": "public/images/certifications/iso-45001.webp",
+  "to": "public/images/certifications/img-iso-45001.webp",
+  "refs": 1
+ },
+ {
+  "from": "public/images/certifications/iso-9001.webp",
+  "to": "public/images/certifications/img-iso-9001.webp",
+  "refs": 1
+ },
+ {
+  "from": "public/images/companies/blue-coolant-indonesia-logo.png",
+  "to": "public/images/companies/img-blue-coolant-indonesia-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/cahaya-samoedera-bersaudara-logo.png",
+  "to": "public/images/companies/img-cahaya-samoedera-bersaudara-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/energi-hijau-samoedera-bersaudara-logo.png",
+  "to": "public/images/companies/img-energi-hijau-samoedera-bersaudara-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/isla-energy-logo.png",
+  "to": "public/images/companies/img-isla-energy-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/pancaputra-mitratama-mandiri-logo.png",
+  "to": "public/images/companies/img-pancaputra-mitratama-mandiri-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/rekadaya-sarana-energi-logo.png",
+  "to": "public/images/companies/img-rekadaya-sarana-energi-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/sefas-keliantama-logo.png",
+  "to": "public/images/companies/img-sefas-keliantama-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/sefas-pelindotama-logo.png",
+  "to": "public/images/companies/img-sefas-pelindotama-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/sinergi-semesta-pratama-logo.png",
+  "to": "public/images/companies/img-sinergi-semesta-pratama-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/companies/tribina-panutan-logo.png",
+  "to": "public/images/companies/img-tribina-panutan-logo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/career-belong-2.jpg",
+  "to": "public/images/crew/img-career-belong.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/images/crew/career-grow-2.jpg",
+  "to": "public/images/crew/img-career-grow.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/images/crew/career-legacy.jpg",
+  "to": "public/images/crew/img-career-legacy.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/images/crew/construction.jpg",
+  "to": "public/images/crew/img-construction.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/crew/fleet.jpg",
+  "to": "public/images/crew/img-fleet.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/images/crew/hero-poster.jpg",
+  "to": "public/images/crew/img-hero-poster.jpg",
+  "refs": 3
+ },
+ {
+  "from": "public/images/crew/industry-agriculture.jpg",
+  "to": "public/images/crew/img-industry-agriculture.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/crew/industry-agriculture-real.jpg",
+  "to": "public/images/crew/img-industry-agriculture-real.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/industry-construction.jpg",
+  "to": "public/images/crew/img-industry-construction.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/industry-fleet-truck.jpg",
+  "to": "public/images/crew/img-industry-fleet-truck.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/industry-manufacturing.jpg",
+  "to": "public/images/crew/img-industry-manufacturing.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/industry-marine-vessel.jpg",
+  "to": "public/images/crew/img-industry-marine-vessel.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/industry-mining-pit.jpg",
+  "to": "public/images/crew/img-industry-mining-pit.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/industry-power.jpg",
+  "to": "public/images/crew/img-industry-power.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/insight-estate.jpg",
+  "to": "public/images/crew/img-insight-estate.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/insight-mine.jpg",
+  "to": "public/images/crew/img-insight-mine.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/insight-plant.jpg",
+  "to": "public/images/crew/img-insight-plant.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/line-distribution.jpg",
+  "to": "public/images/crew/img-line-distribution.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/line-energy-oil.jpg",
+  "to": "public/images/crew/img-line-energy-oil.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/line-industrial.jpg",
+  "to": "public/images/crew/img-line-industrial.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/line-marine.jpg",
+  "to": "public/images/crew/img-line-marine.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/manufacturing.jpg",
+  "to": "public/images/crew/img-manufacturing.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/crew/marine.jpg",
+  "to": "public/images/crew/img-marine.jpg",
+  "refs": 3
+ },
+ {
+  "from": "public/images/crew/milestone-1997.jpg",
+  "to": "public/images/crew/img-milestone-1997.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/milestone-coolant.jpg",
+  "to": "public/images/crew/img-milestone-coolant.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/crew/milestone-fuel.jpg",
+  "to": "public/images/crew/img-milestone-fuel.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/milestone-station.jpg",
+  "to": "public/images/crew/img-milestone-station.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/mining.jpg",
+  "to": "public/images/crew/img-mining.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/oil-pour.jpg",
+  "to": "public/images/crew/img-oil-pour.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/crew/power.jpg",
+  "to": "public/images/crew/img-power.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/crew/products-range.jpg",
+  "to": "public/images/crew/img-products-range.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/crew/service-field.jpg",
+  "to": "public/images/crew/img-service-field.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/service-monitoring.jpg",
+  "to": "public/images/crew/img-service-monitoring.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/service-training.jpg",
+  "to": "public/images/crew/img-service-training.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/supply-coolant.jpg",
+  "to": "public/images/crew/img-supply-coolant.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/supply-degreaser.jpg",
+  "to": "public/images/crew/img-supply-degreaser.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/supply-fuel.jpg",
+  "to": "public/images/crew/img-supply-fuel.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/supply-grease.jpg",
+  "to": "public/images/crew/img-supply-grease.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/supply-oil.jpg",
+  "to": "public/images/crew/img-supply-oil.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/crew/warehouse.jpg",
+  "to": "public/images/crew/img-warehouse.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/og/warehouse.jpg",
+  "to": "public/images/og/img-og-warehouse.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/packaging/drum.webp",
+  "to": "public/images/packaging/img-drum.webp",
+  "refs": 2
+ },
+ {
+  "from": "public/images/packaging/grease-tank.webp",
+  "to": "public/images/packaging/img-grease-tank.webp",
+  "refs": 2
+ },
+ {
+  "from": "public/images/packaging/ibc.webp",
+  "to": "public/images/packaging/img-ibc.webp",
+  "refs": 2
+ },
+ {
+  "from": "public/images/packaging/jerrycan.webp",
+  "to": "public/images/packaging/img-jerrycan.webp",
+  "refs": 2
+ },
+ {
+  "from": "public/images/packaging/pail.webp",
+  "to": "public/images/packaging/img-pail.webp",
+  "refs": 2
+ },
+ {
+  "from": "public/images/packaging/skid-tank.webp",
+  "to": "public/images/packaging/img-skid-tank.webp",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/blue-cleaner-rr.png",
+  "to": "public/images/product-logos/img-blue-cleaner-rr.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/dunamoss.png",
+  "to": "public/images/product-logos/img-dunamoss.png",
+  "refs": 6
+ },
+ {
+  "from": "public/images/product-logos/reco-cool.png",
+  "to": "public/images/product-logos/img-reco-cool.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-alexia.png",
+  "to": "public/images/product-logos/img-shell-alexia.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-argina.png",
+  "to": "public/images/product-logos/img-shell-argina.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-corena.png",
+  "to": "public/images/product-logos/img-shell-corena.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-diala.png",
+  "to": "public/images/product-logos/img-shell-diala.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-gadinia.png",
+  "to": "public/images/product-logos/img-shell-gadinia.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-gadus.png",
+  "to": "public/images/product-logos/img-shell-gadus.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-heat-transfer-oil.png",
+  "to": "public/images/product-logos/img-shell-heat-transfer-oil.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-marine-40.png",
+  "to": "public/images/product-logos/img-shell-marine-40.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-melina.png",
+  "to": "public/images/product-logos/img-shell-melina.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-morlina.png",
+  "to": "public/images/product-logos/img-shell-morlina.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-mysella.png",
+  "to": "public/images/product-logos/img-shell-mysella.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-nautilus-premium.png",
+  "to": "public/images/product-logos/img-shell-nautilus-premium.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-omala.png",
+  "to": "public/images/product-logos/img-shell-omala.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-refrigeration-oil.png",
+  "to": "public/images/product-logos/img-shell-refrigeration-oil.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-rimula.png",
+  "to": "public/images/product-logos/img-shell-rimula.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-sirius.png",
+  "to": "public/images/product-logos/img-shell-sirius.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-spirax.png",
+  "to": "public/images/product-logos/img-shell-spirax.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-super-marine.png",
+  "to": "public/images/product-logos/img-shell-super-marine.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-tellus.png",
+  "to": "public/images/product-logos/img-shell-tellus.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/shell-turbo.png",
+  "to": "public/images/product-logos/img-shell-turbo.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/product-logos/solar-merah-putih.png",
+  "to": "public/images/product-logos/img-solar-merah-putih.png",
+  "refs": 4
+ },
+ {
+  "from": "public/images/products/hero-alexia.jpg",
+  "to": "public/images/products/img-hero-alexia.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-argina.jpg",
+  "to": "public/images/products/img-hero-argina.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-blue-cleaner-rr.jpg",
+  "to": "public/images/products/img-hero-blue-cleaner-rr.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-corena.jpg",
+  "to": "public/images/products/img-hero-corena.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-diala.jpg",
+  "to": "public/images/products/img-hero-diala.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-dunamoss-rim-conditioner.jpg",
+  "to": "public/images/products/img-hero-dunamoss-rim-conditioner.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-dunamoss-tyre-mounting.jpg",
+  "to": "public/images/products/img-hero-dunamoss-tyre-mounting.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-gadinia.jpg",
+  "to": "public/images/products/img-hero-gadinia.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-gadus.jpg",
+  "to": "public/images/products/img-hero-gadus.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-heat-transfer-oil.jpg",
+  "to": "public/images/products/img-hero-heat-transfer-oil.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-marine-40.jpg",
+  "to": "public/images/products/img-hero-marine-40.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-melina.jpg",
+  "to": "public/images/products/img-hero-melina.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-morlina.jpg",
+  "to": "public/images/products/img-hero-morlina.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-mysella.jpg",
+  "to": "public/images/products/img-hero-mysella.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-nautilus-premium.jpg",
+  "to": "public/images/products/img-hero-nautilus-premium.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-omala.jpg",
+  "to": "public/images/products/img-hero-omala.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-reco-cool.jpg",
+  "to": "public/images/products/img-hero-reco-cool.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-refrigeration-oil.jpg",
+  "to": "public/images/products/img-hero-refrigeration-oil.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-rimula.jpg",
+  "to": "public/images/products/img-hero-rimula.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-sirius.jpg",
+  "to": "public/images/products/img-hero-sirius.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-solar-merah-putih.jpg",
+  "to": "public/images/products/img-hero-solar-merah-putih.jpg",
+  "refs": 4
+ },
+ {
+  "from": "public/images/products/hero-spirax.jpg",
+  "to": "public/images/products/img-hero-spirax.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-super-marine.jpg",
+  "to": "public/images/products/img-hero-super-marine.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-tellus.jpg",
+  "to": "public/images/products/img-hero-tellus.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-turbo.jpg",
+  "to": "public/images/products/img-hero-turbo.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/products/hero-waterless-handwash.jpg",
+  "to": "public/images/products/img-hero-waterless-handwash.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/images/services/blotter-paper-test.jpg",
+  "to": "public/images/services/img-blotter-paper-test.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/coolant-condition-monitoring.jpg",
+  "to": "public/images/services/img-coolant-condition-monitoring.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/customer-connect.jpg",
+  "to": "public/images/services/img-customer-connect.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/engine-borescope.jpg",
+  "to": "public/images/services/img-engine-borescope.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/grease-audit.jpg",
+  "to": "public/images/services/img-grease-audit.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/grease-monitoring-skf.jpg",
+  "to": "public/images/services/img-grease-monitoring-skf.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/lubricants-training.jpg",
+  "to": "public/images/services/img-lubricants-training.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/oil-lab-analysis.jpg",
+  "to": "public/images/services/img-oil-lab-analysis.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/plant-tour.jpg",
+  "to": "public/images/services/img-plant-tour.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/thermal-inspection.jpg",
+  "to": "public/images/services/img-thermal-inspection.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/services/troubleshooting-assistance.jpg",
+  "to": "public/images/services/img-troubleshooting-assistance.jpg",
+  "refs": 0
+ },
+ {
+  "from": "public/images/team/haris-wijono-hd.png",
+  "to": "public/images/team/img-haris-wijono.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/team/hartono-hd.png",
+  "to": "public/images/team/img-hartono.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/team/herman-soegeng-hd.png",
+  "to": "public/images/team/img-herman-soegeng.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/team/kezia-roesli-hd.png",
+  "to": "public/images/team/img-kezia-roesli.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/team/ricky-roesli-hd.png",
+  "to": "public/images/team/img-ricky-roesli.png",
+  "refs": 2
+ },
+ {
+  "from": "public/images/team/yulia-trifena-hd.png",
+  "to": "public/images/team/img-yulia-trifena.png",
+  "refs": 2
+ },
+ {
+  "from": "public/videos/pages/about.jpg",
+  "to": "public/videos/pages/img-about.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/videos/pages/companies.jpg",
+  "to": "public/videos/pages/img-companies.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/videos/pages/products.jpg",
+  "to": "public/videos/pages/img-products.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/videos/pages/services.jpg",
+  "to": "public/videos/pages/img-services.jpg",
+  "refs": 1
+ },
+ {
+  "from": "public/videos/testimonials/bayu-setiawan-v2.jpg",
+  "to": "public/videos/testimonials/img-bayu-setiawan-v2.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/videos/testimonials/dadang-darsono-v2.jpg",
+  "to": "public/videos/testimonials/img-dadang-darsono-v2.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/videos/testimonials/lukman-trinindio-v2.jpg",
+  "to": "public/videos/testimonials/img-lukman-trinindio-v2.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/videos/testimonials/reza-achmad-v2.jpg",
+  "to": "public/videos/testimonials/img-reza-achmad-v2.jpg",
+  "refs": 2
+ },
+ {
+  "from": "public/videos/testimonials/riza-nugraha-v2.jpg",
+  "to": "public/videos/testimonials/img-riza-nugraha-v2.jpg",
+  "refs": 2
+ }
+]

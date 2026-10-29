@@ -1,0 +1,28 @@
+# SEFAS Group
+
+> SEFAS Group is a diversified Indonesian business group, operating since 1997, built on partnerships that last. It grew from lubricants distribution into commercial fuels and energy retail.
+
+## Lines of business
+
+- Industrial solutions: lubricants, coolant and technical services that keep mines, plants and fleets running.
+- Energy & mobility: commercial fuel for industry, and fuel retail for people on the road.
+- Marine: marine lubricants and vessel services in Indonesian and international ports.
+- Global distribution: warehousing and logistics that move products to where they are needed.
+
+## Facts
+
+- Customers: 6,000+
+- Locations: 21
+- Years of experience: 29
+- Ports served worldwide: 600+
+- Certifications: ISO 9001, ISO 14001, ISO 45001
+
+## Contact
+
+- Address: Jl. Cideng Timur No. 70, Jakarta Pusat 10150
+- Email: info@sefasgroup.com
+- Phone: +62 21 385 8756
+
+## Languages
+
+The website is available in English (the default, at the site root) and Indonesian (under /id).

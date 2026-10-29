@@ -1,0 +1,29 @@
+@theme {
+  --color-surface-base: var(--brand-surface);
+  --color-surface-raised: color-mix(in oklab, var(--brand-ink) 5%, var(--brand-surface));
+  --color-text-primary: var(--brand-ink);
+  --color-text-secondary: color-mix(in oklab, var(--brand-ink) 70%, var(--brand-surface));
+  --color-text-muted: color-mix(in oklab, var(--brand-ink) 45%, var(--brand-surface));
+  --color-border-default: color-mix(in oklab, var(--brand-ink) 14%, var(--brand-surface));
+  --color-border-strong: color-mix(in oklab, var(--brand-ink) 28%, var(--brand-surface));
+  --color-accent: var(--brand-accent);
+  --color-accent-hover: color-mix(in oklab, var(--brand-accent) 85%, var(--brand-ink));
+  --color-accent-fg: var(--brand-on-accent);
+  --color-status-negative: var(--brand-negative);
+  --radius-sm: calc(var(--brand-radius) - 2px);
+  --radius-md: var(--brand-radius);
+  --font-sans: var(--brand-font);
+  --tracking-tighter: -0.06em;
+  --tracking-tight: -0.035em;
+  --leading-snug: 1.25;
+  --leading-relaxed: 1.5;
+  --leading-display: 0.95;
+  --leading-display-tight: 0.9;
+  --leading-heading: 1.05;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+  --animate-fade-up-slow: fade-up 0.7s ease-out both;
+  --animate-wipe-up: wipe-up 0.9s cubic-bezier(0.77, 0, 0.18, 1) both;
+  --color-background: var(--brand-surface);
+  --color-foreground: var(--brand-ink);
+}

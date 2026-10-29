@@ -1,0 +1,35 @@
+.maplibregl-popup-content {
+  border-radius: var(--radius-sm);
+  padding: 0.875rem 1rem;
+}
+.site-popup {
+  --site-glass: color-mix(in oklab, var(--color-text-primary) 82%, transparent);
+}
+.site-popup .maplibregl-popup-content {
+  padding: 0.375rem;
+  background: var(--site-glass);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-surface-base) 14%, transparent), 0 24px 48px -12px color-mix(in oklab, var(--color-text-primary) 60%, transparent);
+  backdrop-filter: blur(24px) saturate(1.5);
+  animation: fade-up 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.site-popup.maplibregl-popup-anchor-bottom .maplibregl-popup-tip,
+.site-popup.maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip,
+.site-popup.maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip {
+  border-top-color: var(--site-glass);
+}
+.site-popup.maplibregl-popup-anchor-top .maplibregl-popup-tip,
+.site-popup.maplibregl-popup-anchor-top-left .maplibregl-popup-tip,
+.site-popup.maplibregl-popup-anchor-top-right .maplibregl-popup-tip {
+  border-bottom-color: var(--site-glass);
+}
+.site-popup.maplibregl-popup-anchor-left .maplibregl-popup-tip {
+  border-right-color: var(--site-glass);
+}
+.site-popup.maplibregl-popup-anchor-right .maplibregl-popup-tip {
+  border-left-color: var(--site-glass);
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-popup .maplibregl-popup-content {
+    animation: none;
+  }
+}
