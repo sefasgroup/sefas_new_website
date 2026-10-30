@@ -103,7 +103,7 @@ const en = {
     careers: "Build Your Future with SEFAS Group",
     careersHeading: "OUR PEOPLE ARE OUR GREATEST STRENGTH",
     careersBody:
-      "Discover diverse career opportunities across SEFAS Group. We empower our people to develop their skills, explore new opportunities, and grow together in building a stronger future.",
+      "Our people are at the heart of everything we do. At SEFAS Group, we create opportunities for individuals to thrive, make a meaningful impact, and be part of something bigger. Discover your next career opportunity and join us as we shape the future together.",
     careersButton: "See open roles",
     careersPhoto: "SEFAS crew at a training session",
     careersWords: ["Grow", "Belong", "Make a Legacy"],
@@ -252,7 +252,7 @@ const en = {
 
 const id: Widen<typeof en> = {
   site: {
-    title: "SEFAS Group — Built on Trust. Driven by Progress.",
+    title: "SEFAS Group — Berlandaskan Kepercayaan. Terus Bergerak Maju.",
     description:
       "Didirikan di Indonesia pada tahun 1997, SEFAS Group telah berkembang dari bisnis distribusi pelumas menjadi grup usaha terdiversifikasi dengan bidang usaha yang mencakup solusi industri, energi dan ritel bahan bakar, perkapalan, serta distribusi.",
     pageTitle: (page: string) => `${page} — SEFAS Group`,
@@ -349,7 +349,7 @@ const id: Widen<typeof en> = {
     careers: "Bangun Masa Depan Anda Bersama SEFAS Group",
     careersHeading: "TIM KAMI ADALAH KEKUATAN TERBESAR KAMI",
     careersBody:
-      "Temukan berbagai peluang karier di seluruh SEFAS Group. Kami memberdayakan tim kami untuk mengembangkan keterampilan, menjelajahi peluang baru, dan tumbuh bersama membangun masa depan yang lebih kuat.",
+      "Karyawan kami merupakan inti dari setiap langkah yang kami ambil. Di SEFAS Group, kami menciptakan peluang bagi individu untuk terus maju, memberikan kontribusi yang berdampak, dan menjadi bagian dari tujuan yang lebih besar. Jelajahi peluang karier Anda dan bergabunglah bersama kami untuk merancang masa depan bersama.",
     careersButton: "Lihat lowongan",
     careersPhoto: "Tim SEFAS dalam sesi pelatihan",
     careersWords: ["Grow", "Belong", "Make a Legacy"],

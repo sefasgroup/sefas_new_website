@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { HOME_ONLY } from "@/app/_configs/launch";
 import { content } from "@/app/_content";
 import { resizedSrc } from "@/app/_libs/utils";
@@ -29,7 +30,7 @@ const STRIP_GROUPS: { lockup?: string; companies: string[] }[] = [
 ];
 
 export function Hero() {
-  const { companies, hero } = content().home;
+  const { companies, hero, nav } = content().home;
   const t = uiText().home;
   const logoOf = (name: string) => companies.find((c) => c.name === name);
   const strip = STRIP_GROUPS.flatMap((group) => [
@@ -66,6 +67,22 @@ export function Hero() {
         />
       </Parallax>
       <div className="from-text-primary/85 via-text-primary/25 to-text-primary/40 absolute inset-0 bg-linear-to-t" />
+
+      <div
+        className={`container-page pointer-events-none absolute inset-x-0 top-21 z-10 flex items-center ${
+          nav.length > 0 ? "2xl:top-4 2xl:h-14" : "xl:top-4 xl:h-14"
+        }`}
+      >
+        <Image
+          src="/images/brand/img-shell-licensee-white.png"
+          alt="Shell Licensee"
+          width={623}
+          height={128}
+          sizes="10rem"
+          className={`h-6 w-auto ${nav.length > 0 ? "2xl:h-8" : "xl:h-8"}`}
+          priority
+        />
+      </div>
 
       <div className="container-page relative flex flex-1 flex-col justify-end pt-24 pb-10 md:pb-14">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">

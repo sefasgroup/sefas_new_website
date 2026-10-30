@@ -41,7 +41,7 @@ export function Intro() {
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="flex flex-col-reverse items-center border-b border-border-default px-2 py-8 text-center md:border-b-0"
+            className="flex flex-col-reverse items-center justify-end border-b border-border-default px-2 py-8 text-center md:border-b-0"
           >
             <dt className="label-mono mt-3 text-text-secondary">{stat.label}</dt>
             <dd className="text-5xl font-normal tracking-tighter md:text-7xl">
