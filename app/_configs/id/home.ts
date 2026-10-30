@@ -51,8 +51,7 @@ export const businessLines: Widen<typeof en.businessLines> = [
       { label: "Pelumas", href: "/products#oil" },
       { label: "Grease", href: "/products#grease" },
       { label: "Coolant", href: "/products#coolant" },
-      { label: "Pemantauan kondisi", href: "/services#condition-monitoring" },
-      { label: "Pelatihan teknis", href: "/services#technical-knowledge-training" },
+      { label: "Layanan teknis", href: "/services" },
     ],
     companies: ["Sefas Pelindotama", "Tribina Panutan", "Sefas Keliantama", "Sinergi Semesta Pratama", "Pancaputra Mitratama Mandiri", "Blue Coolant Indonesia"],
   },
@@ -268,7 +267,7 @@ export const testimonials: Widen<typeof en.testimonials> = {
 
 export const awards: Widen<typeof en.awards> = [
   { name: "Best National Marketing Program", by: "SEFAS Group · 2025" },
-  { name: "Penghargaan Emas", by: "Indonesia Mining Services Awards · SEFAS Pelindotama · 2025" },
+  { name: "Penghargaan Emas", by: "SEFAS Pelindotama · Indonesia Mining Services Awards 2025" },
   { name: "B2B Distributor of the Year", by: "SEFAS Group · 2024" },
   { name: "Distributor of the Year", by: "SEFAS Group · 2023" },
   { name: "Top Volume Award", by: "Cahaya Samoedera Bersaudara · 2023" },

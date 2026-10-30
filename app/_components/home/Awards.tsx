@@ -32,7 +32,7 @@ function rowStyle(d: number, rowEm = ROW_EM) {
 
 function splitSource(by: string) {
   const at = by.lastIndexOf(" · ");
-  return at > 0 && /^\d{4}$/.test(by.slice(at + 3))
+  return at > 0 && /^\D*\d{4}$/.test(by.slice(at + 3))
     ? { source: by.slice(0, at), year: by.slice(at + 3) }
     : { source: by };
 }

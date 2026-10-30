@@ -22,7 +22,7 @@ export const hero = {
   eyebrow: "SEFAS Group · Since 1997",
   titleLight: "Built on Trust.",
   titleStrong: "Driven by Progress.",
-  body: "From lubricants distribution to commercial fuels and energy retail, SEFAS has grown into a diversified Indonesian business group, built on partnerships that last.",
+  body: "Founded in Indonesia in 1997, SEFAS Group has grown beyond its roots in lubricants distribution into a diversified business group. Across our businesses, we bring together trusted partnerships, operational expertise, and a commitment to creating lasting value.",
   video: {
     sources: [
       { src: "/videos/hero-720.mp4", media: "(max-width: 767px)" },
@@ -36,7 +36,7 @@ export const hero = {
 
 export const stats = [
   { value: 6000, suffix: "+", label: "Customers" },
-  { value: 21, suffix: "", label: "Locations" },
+  { value: 21, suffix: "", label: "Offices and warehouses across Indonesia" },
   { value: 29, suffix: "", label: "Years of experience" },
   { value: 700, suffix: "+", label: "Trusted employees" },
 ];
@@ -44,24 +44,23 @@ export const stats = [
 export const businessLines = [
   {
     name: "Industrial solutions",
-    body: "Lubricants, coolant and technical services that keep mines, plants and fleets running.",
+    body: "Supporting industrial performance through lubricants, coolants, maintenance products, and technical services.",
     image: "/images/crew/img-line-industrial.jpg",
     alt: "Three workers in safety gear beside the tracks of a large mining machine",
     links: [
       { label: "Lubricants", href: "/products#oil" },
-      { label: "Greases", href: "/products#grease" },
+      { label: "Grease", href: "/products#grease" },
       { label: "Coolant", href: "/products#coolant" },
-      { label: "Condition monitoring", href: "/services#condition-monitoring" },
-      { label: "Technical training", href: "/services#technical-knowledge-training" },
+      { label: "Technical services", href: "/services" },
     ],
     companies: ["Sefas Pelindotama", "Tribina Panutan", "Sefas Keliantama", "Sinergi Semesta Pratama", "Pancaputra Mitratama Mandiri", "Blue Coolant Indonesia"],
   },
   {
-    name: "Energy & mobility",
-    body: "Commercial fuel for industry, and fuel retail for people on the road.",
+    name: "Energy & fuel retail",
+    body: "Fuel retail for motorists",
     image: "/images/crew/img-line-energy-oil.jpg",
     alt: "Attendant in a red Shell uniform holding a fuel nozzle at a pump",
-    links: [{ label: "Industrial diesel", href: "/products#fuel" }],
+    links: [{ label: "Commercial fuel for industry", href: "/products#fuel" }],
     companies: ["Energi Hijau Samoedera Bersaudara", "Isla Energy Indonesia"],
   },
   {
@@ -69,12 +68,12 @@ export const businessLines = [
     body: "Marine lubricants and vessel services in Indonesian and international ports.",
     image: "/images/crew/img-line-marine.jpg",
     alt: "Aerial view of a gas carrier moored beside a loading platform at sea",
-    links: [{ label: "Marine lubricants", href: "/products/shell-super-marine" }],
+    links: [{ label: "Marine products and services", href: "/products/shell-super-marine" }],
     companies: ["Cahaya Samoedera Bersaudara"],
   },
   {
-    name: "Global distribution",
-    body: "Warehousing and logistics that move products to where they are needed.",
+    name: "Distribution & logistics",
+    body: "Connecting products, markets, and customers through warehousing, logistics, and distribution capabilities.",
     image: "/images/crew/img-line-distribution.jpg",
     alt: "Forklift moving among stacked red-orange drums in a warehouse",
     links: [{ label: "Our warehouses", href: "/network" }],
@@ -84,11 +83,11 @@ export const businessLines = [
 
 export const about = {
   eyebrow: "Who we are",
-  titleLight: "Named after the rock.",
-  titleStrong: "Built for the long term.",
+  titleLight: "A Legacy Built on Trust.",
+  titleStrong: "Growing with Purpose.",
   body: [
-    "Our journey has been shaped by long-standing partnerships, a deep understanding of the markets we serve, and a commitment to delivering on our promises.",
-    "Over the years, we have continued to expand our businesses, strengthen our capabilities, and develop the people behind our progress. We believe lasting growth is built on trust, delivered through action, and sustained by people who move forward together.",
+    "Founded in Indonesia in 1997, SEFAS Group has grown from lubricants distribution into a diversified business group serving industries across the country. Our progress is driven by enduring partnerships and practical market experience.",
+    "Rooted in the meaning of Cephas ('the rock'), our foundation stays constant: integrity in our work, trust in our relationships, and a steady commitment to developing our people for the long term.",
   ],
   values: ["Integrity", "Excellence", "Relational Trust"],
 };
@@ -200,14 +199,14 @@ export const network = {
 };
 
 export const companies: { name: string; focus?: string; logo?: string; logoWhite?: string; url?: string }[] = [
-  { name: "Sefas Pelindotama", focus: "Mining · Kalimantan", logo: "/images/companies/img-sefas-pelindotama-logo.png" },
-  { name: "Sefas Keliantama", focus: "Power · Fleet · Jabodetabek", logo: "/images/companies/img-sefas-keliantama-logo.png" },
-  { name: "Tribina Panutan", focus: "Power · Manufacturing · Banten", logo: "/images/companies/img-tribina-panutan-logo.png" },
-  { name: "Sinergi Semesta Pratama", focus: "Industrial · Karawang", logo: "/images/companies/img-sinergi-semesta-pratama-logo.png" },
-  { name: "Pancaputra Mitratama Mandiri", focus: "Industrial · East Java", logo: "/images/companies/img-pancaputra-mitratama-mandiri-logo.png" },
-  { name: "Cahaya Samoedera Bersaudara", focus: "Shell Marine · Global", logo: "/images/companies/img-cahaya-samoedera-bersaudara-logo.png" },
-  { name: "Energi Hijau Samoedera Bersaudara", focus: "Industrial diesel", logo: "/images/companies/img-energi-hijau-samoedera-bersaudara-logo.png" },
-  { name: "Blue Coolant Indonesia", focus: "Coolant · Degreaser", logo: "/images/companies/img-blue-coolant-indonesia-logo.png", logoWhite: "/images/companies/img-bci-logo-white.webp" },
+  { name: "Sefas Pelindotama", focus: "Kalimantan", logo: "/images/companies/img-sefas-pelindotama-logo.png" },
+  { name: "Sefas Keliantama", focus: "Greater Jakarta", logo: "/images/companies/img-sefas-keliantama-logo.png" },
+  { name: "Tribina Panutan", focus: "Cilegon · Tangerang", logo: "/images/companies/img-tribina-panutan-logo.png" },
+  { name: "Sinergi Semesta Pratama", focus: "Karawang", logo: "/images/companies/img-sinergi-semesta-pratama-logo.png" },
+  { name: "Pancaputra Mitratama Mandiri", focus: "East Java", logo: "/images/companies/img-pancaputra-mitratama-mandiri-logo.png" },
+  { name: "Cahaya Samoedera Bersaudara", focus: "Indonesia · Malaysia", logo: "/images/companies/img-cahaya-samoedera-bersaudara-logo.png" },
+  { name: "Energi Hijau Samoedera Bersaudara", logo: "/images/companies/img-energi-hijau-samoedera-bersaudara-logo.png" },
+  { name: "Blue Coolant Indonesia", focus: "Indonesia", logo: "/images/companies/img-blue-coolant-indonesia-logo.png", logoWhite: "/images/companies/img-bci-logo-white.webp" },
   { name: "Isla Energy Indonesia", focus: "Fuel retail", logo: "/images/companies/img-isla-energy-logo.png" },
   { name: "Rekadaya Sarana Energi", focus: "Logistics", logo: "/images/companies/img-rekadaya-sarana-energi-logo.png" },
 ];
@@ -273,7 +272,7 @@ export const testimonials = {
 
 export const awards = [
   { name: "Best National Marketing Program", by: "SEFAS Group · 2025" },
-  { name: "Gold Award", by: "Indonesia Mining Services Awards · Sefas Pelindotama · 2025" },
+  { name: "Gold Award", by: "Sefas Pelindotama · Indonesia Mining Services Awards 2025" },
   { name: "B2B Distributor of the Year", by: "SEFAS Group · 2024" },
   { name: "Distributor of the Year", by: "SEFAS Group · 2023" },
   { name: "Top Volume Award", by: "Cahaya Samoedera Bersaudara · 2023" },
