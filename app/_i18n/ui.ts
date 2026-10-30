@@ -42,6 +42,7 @@ const en = {
   },
   footer: {
     letsTalk: "Let's talk",
+    contactSefas: "Contact us",
     links: {
       home: "Home",
       about: "About",
@@ -68,7 +69,7 @@ const en = {
     Fuel: "Fuel",
     Capacity: "Capacity",
   } as Record<string, string>,
-  regions: { All: "All of Indonesia", Java: "Java", Kalimantan: "Kalimantan", "Sumatra & beyond": "Sumatra & beyond" } as Record<
+  regions: { All: "All of Indonesia", Java: "Java", Kalimantan: "Kalimantan", Others: "Others" } as Record<
     string,
     string
   >,
@@ -111,7 +112,6 @@ const en = {
     networkBody:
       "Offices and warehouses across Indonesia's mining, industrial and port hubs. Pick a region, or select a pin for the site.",
     networkMap: "Map of SEFAS offices and warehouses across Indonesia",
-    globalReach: "Global marine reach · Samoedera",
     getInTouch: "Get in touch",
     ctaHeading: ["Equipment to protect?", "Let's talk."],
     ctaBody: "Tell us your sector and location — the nearest SEFAS team replies within one business day.",
@@ -252,9 +252,9 @@ const en = {
 
 const id: Widen<typeof en> = {
   site: {
-    title: "SEFAS Group — Berlandaskan Kepercayaan. Terus Bergerak Maju.",
+    title: "SEFAS Group — Built on Trust. Driven by Progress.",
     description:
-      "Didirikan di Indonesia pada 1997, SEFAS Group adalah grup usaha yang bergerak di bidang solusi industri, energi dan mobilitas, kelautan, serta distribusi global.",
+      "Didirikan di Indonesia pada tahun 1997, SEFAS Group telah berkembang dari bisnis distribusi pelumas menjadi grup usaha terdiversifikasi dengan bidang usaha yang mencakup solusi industri, energi dan ritel bahan bakar, perkapalan, serta distribusi.",
     pageTitle: (page: string) => `${page} — SEFAS Group`,
   },
   common: {
@@ -262,8 +262,8 @@ const id: Widen<typeof en> = {
     close: "Tutup",
     menu: "Menu",
     scrollToExplore: "Gulir untuk menjelajah",
-    requestQuote: "Minta penawaran",
-    chatWhatsApp: "Chat via WhatsApp",
+    requestQuote: "Kirim Permintaan",
+    chatWhatsApp: "Hubungi kami via WhatsApp",
     cookieTitle: "Kami menghargai privasi Anda",
     cookieNotice:
       "Kami menggunakan cookie agar situs ini berjalan dengan aman dan, dengan persetujuan Anda, untuk memahami cara situs digunakan serta meningkatkan pemasaran kami. Anda dapat menerima semua, menolak cookie opsional, atau mengatur preferensi. Selengkapnya di",
@@ -290,7 +290,8 @@ const id: Widen<typeof en> = {
     pending: "Halaman ini sedang disiapkan dan akan segera diterbitkan. Pertanyaan tentang cara kami mengelola informasi Anda dapat dikirim ke",
   },
   footer: {
-    letsTalk: "Mari bicara",
+    letsTalk: "Mari bersama membangun langkah selanjutnya.",
+    contactSefas: "Hubungi SEFAS",
     links: {
       home: "Beranda",
       about: "Tentang",
@@ -317,7 +318,7 @@ const id: Widen<typeof en> = {
     Fuel: "Bahan bakar",
     Capacity: "Kapasitas",
   },
-  regions: { All: "Seluruh Indonesia", Java: "Jawa", Kalimantan: "Kalimantan", "Sumatra & beyond": "Sumatra & lainnya" },
+  regions: { All: "Seluruh Indonesia", Java: "Jawa", Kalimantan: "Kalimantan", Others: "Lainnya" },
   home: {
     partnerWithUs: "Bermitra dengan kami",
     groupCompanies: (names: string) => `Perusahaan SEFAS Group: ${names}`,
@@ -326,41 +327,40 @@ const id: Widen<typeof en> = {
     discover: (range: string) => `Jelajahi ${range}`,
     more: (n: number) => `+${n} lainnya`,
     exploreServices: "Lihat layanan kami",
-    industries: "Industri",
-    industriesHeading: ["Dibangun untuk industri", "yang menggerakkan Indonesia."],
-    theChallenge: "Tantangannya",
+    industries: "Industri yang Kami Layani",
+    industriesHeading: ["Mendukung industri", "yang menjaga bisnis terus bergerak."],
+    theChallenge: "Tantangan",
     howSefasHelps: "Solusi SEFAS",
-    groupCompaniesEyebrow: "Perusahaan grup",
-    groupCompaniesLine: "Satu grup, setiap perusahaan dengan keahliannya sendiri.",
+    groupCompaniesEyebrow: "Grup perusahaan",
+    groupCompaniesLine: "Menghadirkan keahlian spesifik di setiap bidang",
     businesses: "Bidang usaha kami",
-    businessesHeading: ["Empat bidang usaha,", "satu grup."],
+    businessesHeading: ["Beragam Bidang Usaha.", "Satu Fondasi Bersama."],
     stories: "Kisah sukses",
     storiesHeading: ["Hasil nyata", "bagi pelanggan kami."],
-    partnersSay: "Kata mitra kami",
+    partnersSay: "Testimoni Pelanggan",
     prevQuote: "Kutipan sebelumnya",
     nextQuote: "Kutipan berikutnya",
     recognition: "Penghargaan",
-    recognitionHeading: ["Diakui oleh Shell,", "dari tahun ke tahun."],
-    recognitionLine: "Diakui oleh Shell, dari tahun ke tahun.",
+    recognitionHeading: ["Diakui atas dedikasi kerja nyata", "dan kemitraan yang kami bangun."],
+    recognitionLine: "Diakui atas dedikasi kerja nyata dan kemitraan yang kami bangun.",
     awards: "Penghargaan",
     insights: "Berita dan wawasan",
     insightsHeading: ["Kabar dan wawasan", "terbaru dari SEFAS."],
-    careers: "Bergabung bersama kami",
-    careersHeading: "Tumbuh bersama orang-orang yang menjaga Indonesia tetap bergerak.",
+    careers: "Bangun Masa Depan Anda Bersama SEFAS Group",
+    careersHeading: "TIM KAMI ADALAH KEKUATAN TERBESAR KAMI",
     careersBody:
-      "Di seluruh perusahaan kami dan lebih dari 20 kantor serta gudang, kami terus mengembangkan keterampilan dan kemampuan tim kami, dari teknisi lapangan dan tim gudang hingga penjualan, keuangan, dan operasional.",
+      "Temukan berbagai peluang karier di seluruh SEFAS Group. Kami memberdayakan tim kami untuk mengembangkan keterampilan, menjelajahi peluang baru, dan tumbuh bersama membangun masa depan yang lebih kuat.",
     careersButton: "Lihat lowongan",
     careersPhoto: "Tim SEFAS dalam sesi pelatihan",
-    careersWords: ["Grow", "Belong", "Legacy"],
-    network: "Jaringan",
-    networkHeading: ["Dekat dengan setiap lokasi.", "600+ pelabuhan di seluruh dunia."],
+    careersWords: ["Grow", "Belong", "Make a Legacy"],
+    network: "Jaringan Kami",
+    networkHeading: ["Berakar di Indonesia.", "Terhubung ke Pasar yang Lebih Luas."],
     networkBody:
       "Kantor dan gudang di pusat pertambangan, industri, dan pelabuhan Indonesia. Pilih wilayah, atau pilih pin untuk melihat lokasinya.",
     networkMap: "Peta kantor dan gudang SEFAS di seluruh Indonesia",
-    globalReach: "Jangkauan kelautan global · Samoedera",
     getInTouch: "Hubungi kami",
-    ctaHeading: ["Ada peralatan yang perlu dilindungi?", "Mari bicara."],
-    ctaBody: "Beri tahu kami sektor dan lokasi Anda — tim SEFAS terdekat akan membalas dalam satu hari kerja.",
+    ctaHeading: ["Mencari mitra bisnis?", "Mari mulai berdiskusi."],
+    ctaBody: "Ceritakan kepada kami tentang bisnis Anda, kebutuhan Anda, dan wilayah operasional Anda. Tim kami akan meneruskan pertanyaan Anda ke unit bisnis SEFAS yang sesuai.",
     form: {
       name: "Nama",
       company: "Perusahaan",
@@ -369,11 +369,11 @@ const id: Widen<typeof en> = {
       select: "Pilih",
       industries: {
         mining: "Pertambangan",
-        marine: "Kelautan",
-        manufacturing: "Manufaktur Umum",
+        marine: "Perkapalan",
+        manufacturing: "Manufaktur",
         fleet: "Armada & Transportasi",
         construction: "Konstruksi",
-        power: "Ketenagalistrikan",
+        power: "Pembangkit Listrik",
         agriculture: "Pertanian",
         other: "Lainnya",
       },

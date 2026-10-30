@@ -46,7 +46,7 @@ export function Footer() {
             {t.letsTalk}
           </p>
           <Button href={HOME_ONLY ? `${home}#contact` : localHref("/contact")} variant="dark">
-            {uiText().common.contactUs}
+            {t.contactSefas}
           </Button>
         </div>
 

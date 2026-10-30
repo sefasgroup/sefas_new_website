@@ -1,5 +1,6 @@
 "use client";
 
+import { catalogue } from "@/app/_configs/catalogue";
 import { HOME_ONLY } from "@/app/_configs/launch";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -9,6 +10,26 @@ import { cn } from "@/app/_libs/utils";
 import { Button } from "../../_ui/Button";
 import { Eyebrow } from "../../_ui/Eyebrow";
 import { Heading } from "../../_ui/Heading";
+
+function ProductLogos({ slugs, note, label, className }: { slugs: string[]; note?: string; label: string; className?: string }) {
+  const families = slugs.map((s) => catalogue.find((p) => p.slug === s)).filter((p) => p?.logo);
+  return (
+    <ul aria-label={label} className={cn("flex flex-wrap items-center gap-x-5 gap-y-3", className)}>
+      {families.map((p) => (
+        <li key={p!.slug}>
+          <Image
+            src={p!.logo!.src}
+            alt={`${p!.maker} ${p!.mark}`}
+            width={p!.logo!.width}
+            height={p!.logo!.height}
+            className="h-7 w-auto max-w-28 object-contain md:h-8"
+          />
+        </li>
+      ))}
+      {note && <li className="text-text-secondary text-sm leading-snug italic">{note}</li>}
+    </ul>
+  );
+}
 
 export function IndustryCases() {
   const { industries } = useContent().home;
@@ -119,6 +140,9 @@ export function IndustryCases() {
               <div className="my-6 h-px bg-border-default" />
               <h4 className="text-lg font-semibold tracking-tight">{t.home.howSefasHelps}</h4>
               <p className="mt-3 max-w-md leading-relaxed text-text-secondary">{item.solution}</p>
+              {item.products && (
+                <ProductLogos slugs={item.products} note={item.productsNote} label={t.home.whatWeSupply} className="mt-5 max-w-md" />
+              )}
               <Button href={HOME_ONLY ? "#contact" : lp("/contact")} variant="outline" className="mt-8">
                 {t.common.contactUs}
               </Button>
@@ -136,6 +160,7 @@ export function IndustryCases() {
             <h3 className="mt-5 text-3xl font-medium tracking-tighter">{p.name}</h3>
             <p className="mt-3 leading-relaxed text-text-secondary">{p.challenge}</p>
             <p className="mt-3 leading-relaxed">{p.solution}</p>
+            {p.products && <ProductLogos slugs={p.products} note={p.productsNote} label={t.home.whatWeSupply} className="mt-5" />}
           </li>
         ))}
       </ul>

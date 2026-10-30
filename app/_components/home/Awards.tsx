@@ -132,7 +132,7 @@ export function Awards() {
             const { source, year } = splitSource(award.by);
             return (
               <li
-                key={award.name}
+                key={`${award.name}-${award.by}`}
                 aria-current={i === active || undefined}
                 className="absolute inset-x-0 top-1/2 text-center leading-none font-medium whitespace-nowrap will-change-transform"
                 style={rowStyle(distance(i, 0)) as React.CSSProperties}

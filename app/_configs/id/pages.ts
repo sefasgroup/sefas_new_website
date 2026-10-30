@@ -185,7 +185,7 @@ const slot = "Pesan jadwal atau ajukan permintaan untuk memulai sesi layanan ata
 export const servicesPage: Widen<typeof en.servicesPage> = {
   intro:
     "Bagi kami, layanan teknis adalah katalis inovasi dan kinerja jangka panjang, bukan sekadar dukungan tambahan. Tenaga ahli teknis kami bekerja berdampingan dengan pelanggan dalam diagnostik preventif, wawasan yang dapat ditindaklanjuti, dan optimalisasi sistem.",
-  sectors: ["Pertambangan", "Pertanian", "Konstruksi", "Armada", "Manufaktur", "Pembangkit Listrik", "Kelautan"],
+  sectors: ["Pertambangan", "Agriculture", "Konstruksi", "Armada", "Manufaktur", "Pembangkit Listrik", "Perkapalan"],
   categories: [
     {
       id: "condition-monitoring",

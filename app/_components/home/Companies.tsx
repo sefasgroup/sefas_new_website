@@ -25,7 +25,7 @@ export function Companies() {
                 {company.name}
                 {company.url && <span aria-hidden className="text-accent"> ↗</span>}
               </p>
-              <p className="label-mono mt-1 text-text-muted">{company.focus}</p>
+              {company.focus && <p className="label-mono mt-1 text-text-muted">{company.focus}</p>}
             </>
           );
           return (

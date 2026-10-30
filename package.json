@@ -13,7 +13,6 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "images:check": "node scripts/check-image-names.mjs",
-    "images:rename": "node scripts/rename-images.mjs",
     "postinstall": "node -e \"require('fs').cpSync('node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs','public/vendor/maplibre-gl-worker.mjs')\""
   },
   "dependencies": {

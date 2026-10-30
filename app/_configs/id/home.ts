@@ -20,9 +20,9 @@ export const nav = HOME_ONLY ? homeNav : pageNav;
 
 export const hero: Widen<typeof en.hero> = {
   eyebrow: "SEFAS Group · Sejak 1997",
-  titleLight: "Berlandaskan Kepercayaan.",
-  titleStrong: "Terus Bergerak Maju.",
-  body: "Berawal dari distribusi pelumas, SEFAS kini tumbuh menjadi grup usaha Indonesia di berbagai bidang, mulai dari bahan bakar industri hingga ritel energi, dengan kemitraan yang terjalin lama.",
+  titleLight: "Built on Trust.",
+  titleStrong: "Driven by Progress.",
+  body: "Didirikan di Indonesia pada tahun 1997, SEFAS Group telah berkembang melampaui bisnis distribusi pelumas menjadi grup usaha yang terdiversifikasi. Di seluruh bidang usaha kami, kami memadukan kemitraan tepercaya, keahlian operasional, dan komitmen untuk menciptakan nilai yang berkelanjutan.",
   video: {
     sources: [
       { src: "/videos/hero-720.mp4", media: "(max-width: 767px)" },
@@ -36,7 +36,7 @@ export const hero: Widen<typeof en.hero> = {
 
 export const stats: Widen<typeof en.stats> = [
   { value: 6000, suffix: "+", label: "Pelanggan" },
-  { value: 21, suffix: "", label: "Lokasi" },
+  { value: 21, suffix: "", label: "Kantor dan gudang di seluruh Indonesia" },
   { value: 29, suffix: "", label: "Tahun pengalaman" },
   { value: 700, suffix: "+", label: "Karyawan terpercaya" },
 ];
@@ -44,7 +44,7 @@ export const stats: Widen<typeof en.stats> = [
 export const businessLines: Widen<typeof en.businessLines> = [
   {
     name: "Solusi industri",
-    body: "Pelumas, coolant, dan layanan teknis agar tambang, pabrik, dan armada tetap beroperasi.",
+    body: "Mendukung kinerja industri melalui pelumas, coolant, produk perawatan, dan layanan teknis.",
     image: "/images/crew/img-line-industrial.jpg",
     alt: "Tiga pekerja berpakaian keselamatan di samping rantai track alat berat tambang berukuran besar",
     links: [
@@ -57,24 +57,24 @@ export const businessLines: Widen<typeof en.businessLines> = [
     companies: ["Sefas Pelindotama", "Tribina Panutan", "Sefas Keliantama", "Sinergi Semesta Pratama", "Pancaputra Mitratama Mandiri", "Blue Coolant Indonesia"],
   },
   {
-    name: "Energi & mobilitas",
-    body: "Bahan bakar untuk industri, dan SPBU untuk masyarakat di jalan.",
+    name: "Energi & ritel bahan bakar",
+    body: "Bahan bakar ritel untuk pengendara bermotor",
     image: "/images/crew/img-line-energy-oil.jpg",
     alt: "Petugas berseragam Shell merah memegang nosel bahan bakar di dispenser",
-    links: [{ label: "Solar industri", href: "/products#fuel" }],
+    links: [{ label: "Bahan bakar komersial untuk industri", href: "/products#fuel" }],
     companies: ["Energi Hijau Samoedera Bersaudara", "Isla Energy Indonesia"],
   },
   {
-    name: "Kelautan",
-    body: "Pelumas kapal dan layanan kapal di pelabuhan Indonesia dan mancanegara.",
+    name: "Perkapalan",
+    body: "Pelumas kapal dan layanan armada di pelabuhan Indonesia dan internasional.",
     image: "/images/crew/img-line-marine.jpg",
     alt: "Pemandangan udara kapal pengangkut gas yang bersandar di samping platform bongkar muat di laut",
-    links: [{ label: "Pelumas kapal", href: "/products/shell-super-marine" }],
+    links: [{ label: "Produk dan layanan perkapalan", href: "/products/shell-super-marine" }],
     companies: ["Cahaya Samoedera Bersaudara"],
   },
   {
-    name: "Distribusi global",
-    body: "Pergudangan dan logistik yang mengirim produk ke tempat yang membutuhkan.",
+    name: "Distribusi & logistik",
+    body: "Menghubungkan produk, pasar, dan pelanggan melalui kapabilitas pergudangan, logistik, dan distribusi.",
     image: "/images/crew/img-line-distribution.jpg",
     alt: "Forklift bergerak di antara tumpukan drum merah-oranye di gudang",
     links: [{ label: "Lokasi gudang kami", href: "/network" }],
@@ -84,23 +84,23 @@ export const businessLines: Widen<typeof en.businessLines> = [
 
 export const about: Widen<typeof en.about> = {
   eyebrow: "Tentang kami",
-  titleLight: "Kokoh seperti batu karang.",
-  titleStrong: "Dipercaya sejak 1997.",
+  titleLight: "A Legacy Built on Trust.",
+  titleStrong: "Growing with Purpose.",
   body: [
-    "Perjalanan kami tumbuh dari kemitraan jangka panjang, pemahaman yang dalam tentang pasar yang kami layani, dan komitmen untuk selalu menepati janji.",
-    "Dari tahun ke tahun, kami terus mengembangkan usaha, memperkuat kemampuan, dan membina tim di balik kemajuan kami. Kami percaya pertumbuhan yang bertahan lama dimulai dari kepercayaan, dibuktikan lewat kerja nyata, dan dijalankan bersama tim yang terus bergerak maju.",
+    "Didirikan di Indonesia pada tahun 1997, SEFAS Group telah berkembang dari distribusi pelumas menjadi grup usaha terdiversifikasi yang melayani berbagai industri di seluruh negeri. Kemajuan kami didorong oleh kemitraan jangka panjang dan pengalaman pasar yang teruji.",
+    "Berakar dari makna kata Cephas ('batu karang'), fondasi kami tetap kokoh: integritas dalam bekerja, kepercayaan dalam setiap relasi, dan komitmen teguh untuk membina insan kami dalam jangka panjang.",
   ],
   values: ["Integritas", "Keunggulan", "Saling Percaya"],
 };
 
 export const industries: Widen<typeof en.industries> = [
-  { name: "Pertambangan", image: "/images/crew/img-industry-mining-pit.jpg", alt: "Ekskavator memuat dump truck di tambang terbuka", blurb: "Pelumas heavy-duty, bahan bakar, dan pemantauan kondisi di lokasi untuk armada angkut dan ekskavator yang beroperasi tanpa henti.", challenge: "Dump truck dan ekskavator beroperasi tanpa henti di tengah debu, panas, dan beban berat, sehingga satu komponen rusak bisa menghentikan seluruh pit.", solution: "Pelumas Shell heavy-duty, pasokan bahan bakar di lokasi, dan pemantauan kondisi yang membaca keausan lewat oli sebelum berujung pada downtime." },
-  { name: "Kelautan", image: "/images/crew/img-industry-marine-vessel.jpg", alt: "Pemandangan udara kapal pengangkut gas yang bersandar di samping platform bongkar muat di laut", blurb: "Pasokan Shell Marine di 600+ pelabuhan, dengan lube survey, pemeriksaan kapal, dan siaga 24/7 melalui Samoedera.", challenge: "Kapal membutuhkan pelumas yang tepat di pelabuhan yang tepat, sering kali hanya dengan pemberitahuan beberapa jam sebelum sandar.", solution: "Pasokan Shell Marine di 600+ pelabuhan melalui Samoedera, dengan lube survey, pemeriksaan kapal, dan siaga 24/7." },
-  { name: "Manufaktur Umum", image: "/images/crew/img-industry-manufacturing.jpg", alt: "Mesin cetak injeksi plastik di lantai pabrik", blurb: "Oli hidrolik, gear, dan kompresor, dilengkapi flushing sistem dan pelatihan agar lini produksi terus berjalan.", challenge: "Lini produksi bergantung pada sistem hidrolik, gearbox, dan kompresor yang nyaris tidak boleh berhenti.", solution: "Oli industri yang sesuai, flushing sistem, dan pelatihan yang menjaga lini tetap berjalan dan perawatan lebih terencana." },
-  { name: "Armada & Transportasi", image: "/images/crew/img-industry-fleet-truck.jpg", alt: "Deretan truk putih terparkir di depo", blurb: "Oli mesin, coolant, dan program interval penggantian oli yang menekan biaya per kilometer untuk armada truk dan bus.", challenge: "Bahan bakar, oli, dan downtime adalah biaya terbesar per kilometer yang masih bisa dikendalikan pada armada truk dan bus.", solution: "Oli mesin, coolant, dan program interval penggantian oli yang memperpanjang umur pakai dan menurunkan biaya per kilometer." },
-  { name: "Konstruksi", image: "/images/crew/img-industry-construction.jpg", alt: "Dua pekerja berharness dan berhelm memandang crane menara dan perancah di lokasi konstruksi", blurb: "Grease, fluida hidrolik, dan dukungan lapangan untuk alat berat yang bekerja di tengah lumpur, debu, dan panas.", challenge: "Alat berat bekerja di tengah lumpur, debu, dan panas, di lokasi proyek yang berpindah setiap beberapa bulan.", solution: "Grease, fluida hidrolik, dan engineer lapangan yang mengikuti alat berat dari satu lokasi ke lokasi berikutnya." },
-  { name: "Ketenagalistrikan", image: "/images/crew/img-industry-power.jpg", alt: "Pembangkit listrik dengan cerobong tinggi yang menyala saat senja", blurb: "Oli turbin dan transformator serta analisis oli untuk menjaga keandalan operasi pembangkit.", challenge: "Turbin dan transformator harus beroperasi terus-menerus, dan kegagalan oli diukur dalam megawatt yang hilang.", solution: "Oli Shell Turbo dan Diala, ditambah analisis oli yang memantau kondisi dan menjaga keandalan operasi." },
-  { name: "Pertanian", image: "/images/crew/img-industry-agriculture-real.jpg", alt: "Traktor di jalan tanah di antara pohon kelapa sawit", blurb: "Pelumas dan program layanan untuk traktor, pabrik pengolahan, dan armada perkebunan di Sumatra dan Kalimantan.", challenge: "Traktor, pabrik pengolahan, dan armada perkebunan tersebar di area terpencil yang jauh dari pusat servis.", solution: "Pelumas dan program layanan yang dikirim ke seluruh Sumatra dan Kalimantan, disesuaikan dengan siklus panen." },
+  { name: "Pertambangan", image: "/images/crew/img-industry-mining-pit.jpg", alt: "Ekskavator memuat dump truck di tambang terbuka", blurb: "Pelumas heavy-duty, bahan bakar, dan pemantauan kondisi di lokasi untuk armada angkut dan ekskavator yang beroperasi tanpa henti.", challenge: "Alat berat pertambangan beroperasi sepanjang waktu dengan beban berat, debu abrasif, dan suhu tinggi. Keandalan peralatan sangat penting untuk menjaga produktivitas dan menghindari downtime yang merugikan.", solution: "SEFAS menggabungkan keahlian pelumasan Shell dengan wawasan lapangan dan pengetahuan OEM untuk mengatasi tantangan peralatan. Melalui dukungan teknis, analisis oli, dan kolaborasi industri, kami membantu pelanggan meningkatkan praktik pelumasan, memantau kondisi peralatan, dan mengikuti perkembangan industri pertambangan.", products: ["shell-rimula", "shell-spirax", "shell-gadus", "shell-tellus"] },
+  { name: "Perkapalan", image: "/images/crew/img-industry-marine-vessel.jpg", alt: "Pemandangan udara kapal pengangkut gas yang bersandar di samping platform bongkar muat di laut", blurb: "Pasokan Shell Marine di 600+ pelabuhan, dengan lube survey, pemeriksaan kapal, dan siaga 24/7 melalui Samoedera.", challenge: "Mesin dan peralatan kapal menghadapi jam operasi panjang, beban berat, dan kondisi lingkungan maritim yang menantang. Keandalan peralatan dan perawatan yang tepat sangat penting untuk menjaga kelancaran operasional kapal.", solution: "SAMOEDERA bekerja bersama operator kapal untuk menentukan pelumas Shell Marine yang sesuai dengan kebutuhan peralatan. Melalui konsultasi teknis dan pemantauan kondisi oli, kami membantu pelanggan mengambil keputusan pelumasan dan perawatan yang tepat.", products: ["shell-argina", "shell-gadinia"], productsNote: "and other application-specific Shell Marine lubricants" },
+  { name: "Manufaktur", image: "/images/crew/img-industry-manufacturing.jpg", alt: "Mesin cetak injeksi plastik di lantai pabrik", blurb: "Oli hidrolik, gear, dan kompresor, dilengkapi flushing sistem dan pelatihan agar lini produksi terus berjalan.", challenge: "Produksi berkelanjutan menuntut kinerja optimal berbagai mesin, mulai dari gearbox dan sistem hidrolik hingga bearing dan kompresor. Pelumasan yang tidak tepat atau kerusakan tak terduga dapat mengganggu produksi dan meningkatkan biaya operasional.", solution: "Kami bekerja bersama pelanggan dan ahli teknis Shell untuk memahami kebutuhan peralatan dan merekomendasikan solusi pelumasan yang sesuai. Analisis oli dan konsultasi teknis membantu mengidentifikasi peluang perbaikan serta mendukung perencanaan perawatan yang lebih efektif.", products: ["shell-omala", "shell-tellus", "shell-gadus", "shell-corena"] },
+  { name: "Armada & Transportasi", image: "/images/crew/img-industry-fleet-truck.jpg", alt: "Deretan truk putih terparkir di depo", blurb: "Oli mesin, coolant, dan program interval penggantian oli yang menekan biaya per kilometer untuk armada truk dan bus.", challenge: "Jarak tempuh tinggi, kondisi jalan yang beragam, dan jadwal pengiriman yang ketat menuntut kinerja optimal kendaraan komersial. Kerusakan dan perawatan tak terencana dapat memengaruhi produktivitas armada dan biaya operasional.", solution: "SEFAS bekerja bersama operator armada, tim perawatan, dan mitra industri terkait untuk meningkatkan praktik pelumasan dan perawatan. Dengan menggabungkan wawasan teknis, analisis oli, dan pengetahuan industri, kami membantu pelanggan mengidentifikasi peluang untuk meningkatkan keandalan dan efisiensi operasional armada.", products: ["shell-rimula", "shell-spirax", "shell-gadus"] },
+  { name: "Konstruksi", image: "/images/crew/img-industry-construction.jpg", alt: "Dua pekerja berharness dan berhelm memandang crane menara dan perancah di lokasi konstruksi", blurb: "Grease, fluida hidrolik, dan dukungan lapangan untuk alat berat yang bekerja di tengah lumpur, debu, dan panas.", challenge: "Alat konstruksi beroperasi di tengah perubahan medan, cuaca, dan beban kerja. Penggunaan intensif dapat mempercepat keausan komponen, sementara downtime peralatan dapat menghambat proyek dan meningkatkan biaya.", solution: "Kami membantu pelanggan memilih pelumas sesuai jenis peralatan dan kondisi kerja, dengan dukungan keahlian teknis Shell serta rekomendasi produsen. Melalui dukungan lapangan dan panduan pelumasan, kami bekerja bersama tim perawatan untuk menangani masalah peralatan dan meningkatkan keandalannya.", products: ["shell-rimula", "shell-spirax", "shell-gadus", "shell-tellus"] },
+  { name: "Pembangkit Listrik", image: "/images/crew/img-industry-power.jpg", alt: "Pembangkit listrik dengan cerobong tinggi yang menyala saat senja", blurb: "Oli turbin dan transformator serta analisis oli untuk menjaga keandalan operasi pembangkit.", challenge: "Peralatan pembangkit listrik harus beroperasi secara andal untuk memenuhi kebutuhan listrik yang berkelanjutan. Suhu tinggi, beban berat, dan jadwal perawatan yang ketat menjadi tantangan bagi turbin, generator, gearbox, dan sistem pendukung. Downtime yang tidak terencana dapat memengaruhi ketersediaan pembangkit dan efisiensi operasional.", solution: "Melalui konsultasi teknis, analisis oli, dan rekomendasi perawatan, kami membantu pelanggan memantau kondisi peralatan, mengoptimalkan kinerja pelumasan, dan mendukung keandalan operasional pembangkit." },
+  { name: "Agrikultur", image: "/images/crew/img-industry-agriculture-real.jpg", alt: "Traktor di jalan tanah di antara pohon kelapa sawit", blurb: "Pelumas dan program layanan untuk traktor, pabrik pengolahan, dan armada perkebunan di Sumatra dan Kalimantan.", challenge: "Mesin agrikultur harus bekerja sepanjang siklus penanaman, pemeliharaan, dan panen, sering kali di lokasi terpencil dengan kondisi lapangan yang menantang. Beban kerja musiman dan terbatasnya waktu perawatan menjadikan ketersediaan peralatan sangat penting.", solution: "SEFAS bekerja bersama pelanggan agrikultur, ahli teknis Shell, dan pemangku kepentingan peralatan terkait untuk menyesuaikan solusi pelumasan dengan kebutuhan operasional. Kami juga menghubungkan pelanggan dengan wawasan industri dan praktik terbaru untuk mendukung pengelolaan peralatan serta keputusan perawatan yang lebih baik." },
 ];
 
 export const products: Widen<typeof en.products> = [
@@ -170,7 +170,7 @@ export const statement: Widen<typeof en.statement> = {
 };
 
 export const network: Widen<typeof en.network> = {
-  regions: ["Java", "Kalimantan", "Sumatra & beyond"],
+  regions: ["Java", "Kalimantan", "Others"],
   sites: [
     { city: "Jakarta", company: "SEFAS Group", kind: "Kantor pusat", region: "Java", lng: 106.809, lat: -6.17 },
     { city: "Jakarta Utara", company: "Cahaya Samoedera Bersaudara", kind: "Kantor pusat", region: "Java", lng: 106.84, lat: -6.13 },
@@ -186,37 +186,32 @@ export const network: Widen<typeof en.network> = {
     { city: "Berau", company: "Sefas Pelindotama", kind: "Kantor & gudang", region: "Kalimantan", lng: 117.49, lat: 2.15 },
     { city: "Tarakan", company: "Sefas Pelindotama", kind: "Kantor & gudang", region: "Kalimantan", lng: 117.63, lat: 3.3 },
     { city: "Pontianak", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Kalimantan", lng: 109.33, lat: -0.02 },
-    { city: "Medan", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Sumatra & beyond", lng: 98.73, lat: 3.6 },
-    { city: "Batam", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Sumatra & beyond", lng: 104.05, lat: 1.13 },
-    { city: "Palembang", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Sumatra & beyond", lng: 104.7, lat: -2.92 },
-    { city: "Makassar", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Sumatra & beyond", lng: 119.52, lat: -5.08 },
-    { city: "Sorong", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Sumatra & beyond", lng: 131.27, lat: -0.88 },
-  ],
-  global: [
-    { value: "40+", label: "Negara" },
-    { value: "600+", label: "Pelabuhan utama" },
-    { value: "24/7", label: "Siaga kelautan" },
+    { city: "Medan", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Others", lng: 98.73, lat: 3.6 },
+    { city: "Batam", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Others", lng: 104.05, lat: 1.13 },
+    { city: "Palembang", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Others", lng: 104.7, lat: -2.92 },
+    { city: "Makassar", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Others", lng: 119.52, lat: -5.08 },
+    { city: "Sorong", company: "Cahaya Samoedera Bersaudara", kind: "Gudang", region: "Others", lng: 131.27, lat: -0.88 },
   ],
 };
 
 export const companies: Widen<typeof en.companies> = [
-  { name: "Sefas Pelindotama", focus: "Pertambangan · Kalimantan", logo: "/images/companies/img-sefas-pelindotama-logo.png" },
-  { name: "Sefas Keliantama", focus: "Pembangkit · Armada · Jabodetabek", logo: "/images/companies/img-sefas-keliantama-logo.png" },
-  { name: "Tribina Panutan", focus: "Pembangkit · Manufaktur · Banten", logo: "/images/companies/img-tribina-panutan-logo.png" },
-  { name: "Cahaya Samoedera Bersaudara", focus: "Shell Marine · Global", logo: "/images/companies/img-cahaya-samoedera-bersaudara-logo.png" },
-  { name: "Blue Coolant Indonesia", focus: "Coolant · Degreaser", logo: "/images/companies/img-blue-coolant-indonesia-logo.png", logoWhite: "/images/companies/img-bci-logo-white.webp" },
-  { name: "Sinergi Semesta Pratama", focus: "Industri · Karawang", logo: "/images/companies/img-sinergi-semesta-pratama-logo.png" },
-  { name: "Energi Hijau Samoedera Bersaudara", focus: "Solar industri", logo: "/images/companies/img-energi-hijau-samoedera-bersaudara-logo.png" },
-  { name: "Pancaputra Mitratama Mandiri", focus: "Industri · Jawa Timur", logo: "/images/companies/img-pancaputra-mitratama-mandiri-logo.png" },
-  { name: "Isla Energy Indonesia", focus: "Ritel bahan bakar", logo: "/images/companies/img-isla-energy-logo.png" },
-  { name: "Rekadaya Sarana Energi", focus: "Logistik", logo: "/images/companies/img-rekadaya-sarana-energi-logo.png" },
+  { name: "Sefas Pelindotama", logo: "/images/companies/img-sefas-pelindotama-logo.png" },
+  { name: "Sefas Keliantama", logo: "/images/companies/img-sefas-keliantama-logo.png" },
+  { name: "Tribina Panutan", logo: "/images/companies/img-tribina-panutan-logo.png" },
+  { name: "Sinergi Semesta Pratama", logo: "/images/companies/img-sinergi-semesta-pratama-logo.png" },
+  { name: "Pancaputra Mitratama Mandiri", logo: "/images/companies/img-pancaputra-mitratama-mandiri-logo.png" },
+  { name: "Cahaya Samoedera Bersaudara", logo: "/images/companies/img-cahaya-samoedera-bersaudara-logo.png" },
+  { name: "Energi Hijau Samoedera Bersaudara", logo: "/images/companies/img-energi-hijau-samoedera-bersaudara-logo.png" },
+  { name: "Blue Coolant Indonesia", logo: "/images/companies/img-blue-coolant-indonesia-logo.png", logoWhite: "/images/companies/img-bci-logo-white.webp" },
+  { name: "Isla Energy Indonesia", logo: "/images/companies/img-isla-energy-logo.png" },
+  { name: "Rekadaya Sarana Energi", logo: "/images/companies/img-rekadaya-sarana-energi-logo.png" },
 ];
 
 export const caseStudies: Widen<typeof en.caseStudies> = {
   placeholder: true,
   items: [
     { sector: "Pertambangan", metric: "38", unit: "%", result: "Lebih sedikit jam downtime tak terencana pada armada angkut 60 truk", client: "Kontraktor tambang batu bara, Kalimantan Timur" },
-    { sector: "Kelautan", metric: "600", unit: "+", result: "Pelabuhan terlayani tanpa satu pun port call terlewat dalam setahun", client: "Operator kapal tanker regional" },
+    { sector: "Perkapalan", metric: "600", unit: "+", result: "Pelabuhan terlayani tanpa satu pun port call terlewat dalam setahun", client: "Operator kapal tanker regional" },
     { sector: "Pembangkit", metric: "2", unit: "×", result: "Interval penggantian oli turbin lebih panjang setelah flushing sistem", client: "Produsen listrik swasta, Banten" },
   ],
 };
@@ -272,18 +267,25 @@ export const testimonials: Widen<typeof en.testimonials> = {
 };
 
 export const awards: Widen<typeof en.awards> = [
-  { name: "Distributor of the Year", by: "Shell Indonesia" },
-  { name: "Gold Award Mining Services", by: "Indonesia Mining Services Awards · 2026" },
-  { name: "Tujuh penghargaan Shell", by: "Shell Distributor Conference · 2026" },
-  { name: "Top Shell Marine Distributor", by: "Shell Marine Conference, Hanoi · 2026" },
-  { name: "Best Service Penetration", by: "Shell Indonesia" },
-  { name: "Best Shell Marine Distributor", by: "ASEANSA Conference · 2025" },
+  { name: "Best National Marketing Program", by: "SEFAS Group · 2025" },
+  { name: "Penghargaan Emas", by: "Indonesia Mining Services Awards · SEFAS Pelindotama · 2025" },
+  { name: "B2B Distributor of the Year", by: "SEFAS Group · 2024" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2023" },
+  { name: "Top Volume Award", by: "Cahaya Samoedera Bersaudara · 2023" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2022" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2021" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2021" },
+  { name: "Best Innovation Awards", by: "Tribina Panutan · 2020" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2020" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2019" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2018" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2018" },
 ];
 
 export const milestones: Widen<typeof en.milestones> = [
   { year: "1997", title: "Berdiri sebagai distributor resmi Shell Lubricants", place: "Balikpapan, Kalimantan Timur", image: "/images/crew/img-milestone-1997.jpg" },
   { year: "2002–2010", title: "Ekspansi ke kawasan industri utama", place: "Kalimantan, Jabodetabek, Cilegon", image: "/images/crew/img-mining.jpg" },
-  { year: "2010–2015", title: "Diversifikasi ke coolant dan kelautan", place: "Indonesia", image: "/images/crew/img-marine.jpg" },
+  { year: "2010–2015", title: "Diversifikasi ke coolant dan perkapalan", place: "Indonesia", image: "/images/crew/img-marine.jpg" },
   { year: "2015–2021", title: "Langkah pertama ke bahan bakar komersial", place: "Kalimantan Utara, Tangerang", image: "/images/crew/img-milestone-fuel.jpg" },
   { year: "2022–2026", title: "Tumbuh menjadi grup energi terintegrasi", place: "Seluruh Indonesia", image: "/images/crew/img-milestone-station.jpg" },
 ];

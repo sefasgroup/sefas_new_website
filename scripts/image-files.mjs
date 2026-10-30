@@ -5,7 +5,7 @@ import { join } from "node:path";
 export const ROOT = join(import.meta.dirname, "..");
 export const IMAGE_EXT = /\.(jpe?g|png|webp|avif|svg|gif)$/i;
 const TEXT_EXT = /\.(tsx?|mjs|cjs|js|jsx|css|md|json|ya?ml|txt|html|xml)$/i;
-const SKIP = /^(docs\/|public\/vendor\/|pnpm-lock\.yaml$|scripts\/image-(rename-map|allow|redirects)\.json$|scripts\/(check-image-names|rename-images|image-files)\.mjs$)/;
+const SKIP = /^(docs\/|public\/vendor\/|pnpm-lock\.yaml$|scripts\/image-(rename-map|allow)\.json$|scripts\/(check-image-names|image-files)\.mjs$)/;
 
 export const readJson = (rel) => JSON.parse(readFileSync(join(ROOT, rel), "utf8"));
 

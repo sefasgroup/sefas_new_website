@@ -94,13 +94,13 @@ export const about = {
 };
 
 export const industries = [
-  { name: "Mining", image: "/images/crew/img-industry-mining-pit.jpg", alt: "Excavator loading a dump truck at an open-pit mine", blurb: "Heavy-duty lubricants, fuel and on-site condition monitoring for haul fleets and excavators running around the clock.", challenge: "Haul trucks and excavators run around the clock in dust, heat and heavy load, so one failed component can stop a whole pit.", solution: "Heavy-duty Shell lubricants, on-site fuel and condition monitoring that read wear in the oil before it becomes downtime." },
-  { name: "Marine", image: "/images/crew/img-industry-marine-vessel.jpg", alt: "Aerial view of a gas carrier moored beside a loading platform at sea", blurb: "Shell Marine supply in 600+ ports, with lube surveys, ship checks and 24/7 standby through Samoedera.", challenge: "Vessels need the right lubricant at the right port, often with only hours of notice between calls.", solution: "Shell Marine supply in 600+ ports through Samoedera, with lube surveys, ship checks and 24/7 standby." },
-  { name: "General Manufacturing", image: "/images/crew/img-industry-manufacturing.jpg", alt: "Plastic injection moulding machines on a factory floor", blurb: "Hydraulic, gear and compressor oils with system flushing and training that keep production lines moving.", challenge: "Production lines depend on hydraulics, gearboxes and compressors that are rarely allowed to stop.", solution: "Matched industrial oils, system flushing and training that keep lines running and maintenance predictable." },
-  { name: "Fleet & Transport", image: "/images/crew/img-industry-fleet-truck.jpg", alt: "Row of white trucks parked in a depot", blurb: "Engine oils, coolant and drain-interval programmes that cut cost per kilometre across truck and bus fleets.", challenge: "Fuel, oil and downtime are the largest controllable costs per kilometre across truck and bus fleets.", solution: "Engine oils, coolant and drain-interval programmes that extend service life and lower cost per kilometre." },
-  { name: "Construction", image: "/images/crew/img-industry-construction.jpg", alt: "Two workers in safety harnesses and hard hats looking up at a tower crane and scaffolding on a construction site", blurb: "Greases, hydraulic fluids and field support for equipment working in mud, dust and heat.", challenge: "Equipment works in mud, dust and heat on sites that move every few months.", solution: "Greases, hydraulic fluids and field engineers who follow the equipment from site to site." },
-  { name: "Power", image: "/images/crew/img-industry-power.jpg", alt: "A power plant with tall exhaust stacks lit at dusk", blurb: "Turbine and transformer oils plus oil analysis that protect uptime at power plants.", challenge: "Turbines and transformers have to run continuously, and an oil failure is measured in megawatts lost.", solution: "Shell Turbo and Diala oils, plus oil analysis that tracks condition and protects uptime." },
-  { name: "Agriculture", image: "/images/crew/img-industry-agriculture-real.jpg", alt: "Tractor on a dirt track between oil palms", blurb: "Lubricants and service programmes for tractors, mills and plantation fleets across Sumatra and Kalimantan.", challenge: "Tractors, mills and plantation fleets are spread across remote estates far from service centres.", solution: "Lubricants and service programmes delivered across Sumatra and Kalimantan, timed to the harvest cycle." },
+  { name: "Mining", image: "/images/crew/img-industry-mining-pit.jpg", alt: "Excavator loading a dump truck at an open-pit mine", blurb: "Heavy-duty lubricants, fuel and on-site condition monitoring for haul fleets and excavators running around the clock.", challenge: "Mining equipment operates around the clock under heavy loads, abrasive dust and high temperatures. Equipment reliability is essential to maintaining productivity and avoiding costly downtime.", solution: "SEFAS combines Shell's lubrication expertise with field insights and OEM knowledge to address equipment challenges. Through technical support, oil analysis and industry collaboration, we help customers improve lubrication practices, manage equipment condition and stay informed about developments in mining.", products: ["shell-rimula", "shell-spirax", "shell-gadus", "shell-tellus"] },
+  { name: "Marine", image: "/images/crew/img-industry-marine-vessel.jpg", alt: "Aerial view of a gas carrier moored beside a loading platform at sea", blurb: "Shell Marine supply in 600+ ports, with lube surveys, ship checks and 24/7 standby through Samoedera.", challenge: "Marine engines and onboard equipment face prolonged operating hours, heavy loads and exposure to harsh marine conditions. Reliable equipment and proper maintenance are critical to keeping vessels operational.", solution: "SAMOEDERA works with vessel operators to identify suitable Shell Marine lubricants for their equipment. Through technical consultation and oil condition monitoring, we help customers make informed lubrication and maintenance decisions.", products: ["shell-argina", "shell-gadinia"], productsNote: "and other application-specific Shell Marine lubricants" },
+  { name: "General Manufacturing", image: "/images/crew/img-industry-manufacturing.jpg", alt: "Plastic injection moulding machines on a factory floor", blurb: "Hydraulic, gear and compressor oils with system flushing and training that keep production lines moving.", challenge: "Continuous production places sustained demands on machinery, from gearboxes and hydraulic systems to bearings and compressors. Poor lubrication or unexpected equipment failure can disrupt production and increase operating costs.", solution: "We work with customers and Shell's technical experts to understand equipment requirements and recommend suitable lubrication solutions. Oil analysis and technical consultation help identify improvement opportunities and support more effective maintenance planning.", products: ["shell-omala", "shell-tellus", "shell-gadus", "shell-corena"] },
+  { name: "Fleet & Transport", image: "/images/crew/img-industry-fleet-truck.jpg", alt: "Row of white trucks parked in a depot", blurb: "Engine oils, coolant and drain-interval programmes that cut cost per kilometre across truck and bus fleets.", challenge: "High mileage, varying road conditions and tight delivery schedules put commercial vehicles under constant pressure. Breakdowns and unplanned maintenance can affect fleet productivity and operating costs.", solution: "SEFAS works with fleet operators, maintenance teams and relevant industry partners to improve lubrication, coolants and maintenance practices. By combining technical insights, oil analysis and industry knowledge, we help customers identify opportunities to improve fleet reliability and operating efficiency.", products: ["shell-rimula", "shell-spirax", "shell-gadus"] },
+  { name: "Construction", image: "/images/crew/img-industry-construction.jpg", alt: "Two workers in safety harnesses and hard hats looking up at a tower crane and scaffolding on a construction site", blurb: "Greases, hydraulic fluids and field support for equipment working in mud, dust and heat.", challenge: "Construction equipment operates across changing terrain, weather and workloads. Intensive use can accelerate component wear, while equipment downtime can delay projects and increase costs.", solution: "We help customers select lubricants suited to their equipment and working conditions, supported by Shell's technical expertise and manufacturer recommendations. Through field support and lubrication guidance, we work with maintenance teams to address equipment issues and improve reliability.", products: ["shell-rimula", "shell-spirax", "shell-gadus", "shell-tellus"] },
+  { name: "Power", image: "/images/crew/img-industry-power.jpg", alt: "A power plant with tall exhaust stacks lit at dusk", blurb: "Turbine and transformer oils plus oil analysis that protect uptime at power plants.", challenge: "Power generation equipment must operate reliably to meet continuous electricity demand. High operating temperatures, heavy loads and demanding maintenance schedules place pressure on turbines, generators, gearboxes and auxiliary systems. Unplanned downtime can affect plant availability and operating efficiency.", solution: "Through technical consultation, oil analysis and maintenance recommendations, we help customers monitor equipment condition, manage lubrication performance and support reliable plant operations." },
+  { name: "Agriculture", image: "/images/crew/img-industry-agriculture-real.jpg", alt: "Tractor on a dirt track between oil palms", blurb: "Lubricants and service programmes for tractors, mills and plantation fleets across Sumatra and Kalimantan.", challenge: "Agricultural machinery must perform across planting, cultivation and harvesting cycles, often in remote locations and demanding field conditions. Seasonal workloads and limited maintenance windows make equipment availability especially important.", solution: "SEFAS works with agricultural customers, Shell's technical experts and relevant equipment stakeholders to match lubrication solutions to operational needs. We also connect customers with industry insights and emerging practices to support better equipment management and maintenance decisions." },
 ];
 
 export const products = [
@@ -171,11 +171,11 @@ export const statement = {
   lines: services.items.map((s, i) => ({ title: s.title, body: s.body, clip: ["monitoring", "field", "training"][i] })),
 };
 
-type Region = "Java" | "Kalimantan" | "Sumatra & beyond";
+type Region = "Java" | "Kalimantan" | "Others";
 export type Site = { city: string; company: string; kind: string; region: Region; lng: number; lat: number };
 
 export const network = {
-  regions: ["Java", "Kalimantan", "Sumatra & beyond"] as Region[],
+  regions: ["Java", "Kalimantan", "Others"] as Region[],
   sites: [
     { city: "Jakarta", company: "SEFAS Group", kind: "Head office", region: "Java", lng: 106.809, lat: -6.17 },
     { city: "North Jakarta", company: "Cahaya Samoedera Bersaudara", kind: "Head office", region: "Java", lng: 106.84, lat: -6.13 },
@@ -191,28 +191,23 @@ export const network = {
     { city: "Berau", company: "Sefas Pelindotama", kind: "Office & warehouse", region: "Kalimantan", lng: 117.49, lat: 2.15 },
     { city: "Tarakan", company: "Sefas Pelindotama", kind: "Office & warehouse", region: "Kalimantan", lng: 117.63, lat: 3.3 },
     { city: "Pontianak", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Kalimantan", lng: 109.33, lat: -0.02 },
-    { city: "Medan", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Sumatra & beyond", lng: 98.73, lat: 3.6 },
-    { city: "Batam", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Sumatra & beyond", lng: 104.05, lat: 1.13 },
-    { city: "Palembang", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Sumatra & beyond", lng: 104.7, lat: -2.92 },
-    { city: "Makassar", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Sumatra & beyond", lng: 119.52, lat: -5.08 },
-    { city: "Sorong", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Sumatra & beyond", lng: 131.27, lat: -0.88 },
+    { city: "Medan", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Others", lng: 98.73, lat: 3.6 },
+    { city: "Batam", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Others", lng: 104.05, lat: 1.13 },
+    { city: "Palembang", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Others", lng: 104.7, lat: -2.92 },
+    { city: "Makassar", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Others", lng: 119.52, lat: -5.08 },
+    { city: "Sorong", company: "Cahaya Samoedera Bersaudara", kind: "Warehouse", region: "Others", lng: 131.27, lat: -0.88 },
   ] satisfies Site[],
-  global: [
-    { value: "40+", label: "Countries" },
-    { value: "600+", label: "Major ports" },
-    { value: "24/7", label: "Marine standby" },
-  ],
 };
 
-export const companies: { name: string; focus: string; logo?: string; logoWhite?: string; url?: string }[] = [
+export const companies: { name: string; focus?: string; logo?: string; logoWhite?: string; url?: string }[] = [
   { name: "Sefas Pelindotama", focus: "Mining · Kalimantan", logo: "/images/companies/img-sefas-pelindotama-logo.png" },
   { name: "Sefas Keliantama", focus: "Power · Fleet · Jabodetabek", logo: "/images/companies/img-sefas-keliantama-logo.png" },
   { name: "Tribina Panutan", focus: "Power · Manufacturing · Banten", logo: "/images/companies/img-tribina-panutan-logo.png" },
-  { name: "Cahaya Samoedera Bersaudara", focus: "Shell Marine · Global", logo: "/images/companies/img-cahaya-samoedera-bersaudara-logo.png" },
-  { name: "Blue Coolant Indonesia", focus: "Coolant · Degreaser", logo: "/images/companies/img-blue-coolant-indonesia-logo.png", logoWhite: "/images/companies/img-bci-logo-white.webp" },
   { name: "Sinergi Semesta Pratama", focus: "Industrial · Karawang", logo: "/images/companies/img-sinergi-semesta-pratama-logo.png" },
-  { name: "Energi Hijau Samoedera Bersaudara", focus: "Industrial diesel", logo: "/images/companies/img-energi-hijau-samoedera-bersaudara-logo.png" },
   { name: "Pancaputra Mitratama Mandiri", focus: "Industrial · East Java", logo: "/images/companies/img-pancaputra-mitratama-mandiri-logo.png" },
+  { name: "Cahaya Samoedera Bersaudara", focus: "Shell Marine · Global", logo: "/images/companies/img-cahaya-samoedera-bersaudara-logo.png" },
+  { name: "Energi Hijau Samoedera Bersaudara", focus: "Industrial diesel", logo: "/images/companies/img-energi-hijau-samoedera-bersaudara-logo.png" },
+  { name: "Blue Coolant Indonesia", focus: "Coolant · Degreaser", logo: "/images/companies/img-blue-coolant-indonesia-logo.png", logoWhite: "/images/companies/img-bci-logo-white.webp" },
   { name: "Isla Energy Indonesia", focus: "Fuel retail", logo: "/images/companies/img-isla-energy-logo.png" },
   { name: "Rekadaya Sarana Energi", focus: "Logistics", logo: "/images/companies/img-rekadaya-sarana-energi-logo.png" },
 ];
@@ -277,12 +272,19 @@ export const testimonials = {
 } as const;
 
 export const awards = [
-  { name: "Distributor of the Year", by: "Shell Indonesia" },
-  { name: "Mining Services Gold", by: "Indonesia Mining Services Awards · 2026" },
-  { name: "Seven Shell awards", by: "Shell Distributor Conference · 2026" },
-  { name: "Top Shell Marine Distributor", by: "Shell Marine Conference, Hanoi · 2026" },
-  { name: "Best Service Penetration", by: "Shell Indonesia" },
-  { name: "Best Shell Marine Distributor", by: "ASEANSA Conference · 2025" },
+  { name: "Best National Marketing Program", by: "SEFAS Group · 2025" },
+  { name: "Gold Award", by: "Indonesia Mining Services Awards · Sefas Pelindotama · 2025" },
+  { name: "B2B Distributor of the Year", by: "SEFAS Group · 2024" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2023" },
+  { name: "Top Volume Award", by: "Cahaya Samoedera Bersaudara · 2023" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2022" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2021" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2021" },
+  { name: "Best Innovation Awards", by: "Tribina Panutan · 2020" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2020" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2019" },
+  { name: "Distributor of the Year", by: "SEFAS Group · 2018" },
+  { name: "Top Performing Distributor", by: "Cahaya Samoedera Bersaudara · 2018" },
 ];
 
 export const certifications = [

@@ -181,16 +181,6 @@ export function NetworkMap({ children }: { children: React.ReactNode }) {
               );
             })}
           </ul>
-
-          <p className="label-mono mt-8 opacity-60">{t.home.globalReach}</p>
-          <dl className="mt-4 grid grid-cols-3 gap-4">
-            {network.global.map((g) => (
-              <div key={g.label} className="flex flex-col-reverse">
-                <dt className="label-mono mt-2 opacity-60">{g.label}</dt>
-                <dd className="text-2xl tracking-tighter">{g.value}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </div>
     </div>
