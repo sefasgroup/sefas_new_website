@@ -38,7 +38,7 @@ export const stats = [
   { value: 6000, suffix: "+", label: "Customers" },
   { value: 21, suffix: "", label: "Offices and warehouses across Indonesia" },
   { value: 29, suffix: "", label: "Years of experience" },
-  { value: 700, suffix: "+", label: "Trusted employees" },
+  { value: 700, suffix: "+", label: "Employees" },
 ];
 
 export const businessLines = [

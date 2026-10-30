@@ -3,6 +3,7 @@ import Image from "next/image";
 import { content } from "@/app/_content";
 import { localHref, uiText } from "@/app/_i18n/server";
 import { resizedSrc } from "@/app/_libs/utils";
+import { Eyebrow } from "../../_ui/Eyebrow";
 import { Pinned } from "../../_ui/Pinned";
 
 type Line = ReturnType<typeof content>["home"]["businessLines"][number];
@@ -82,56 +83,66 @@ export function BusinessLines() {
         className="hidden lg:block"
         frameClassName="flex items-center pt-16"
       >
-        <div className="container-page grid h-[min(78svh,50rem)] short:h-[calc(100svh-6rem)] w-full grid-cols-2 gap-4">
-          <div className="bg-text-primary text-surface-base relative flex flex-col justify-between overflow-hidden rounded-sm p-10 xl:p-14">
-            {businessLines.map((line, n) => (
-              <Image
-                key={line.name}
-                src={line.image}
-                alt={line.alt}
-                fill
-                sizes="50vw"
-                className="object-cover"
-                style={{
-                  opacity: n
-                    ? `clamp(0, calc((var(--p) * ${steps} - ${n} + 0.9) * 1.6), 1)`
-                    : undefined,
-                }}
-              />
-            ))}
-            <div className="from-text-primary/80 to-text-primary/70 absolute inset-0 bg-linear-to-b via-transparent" />
-            <div className="relative">{heading}</div>
-            <div className="bg-surface-base/15 relative h-0.5">
-              <div
-                className="bg-surface-base absolute inset-0 origin-left"
-                style={{
-                  transform: `scaleX(calc(${1 / businessLines.length} + var(--p) * ${steps / businessLines.length}))`,
-                }}
-              />
-            </div>
-          </div>
-
-          <div className="relative overflow-hidden rounded-sm">
-            {businessLines.map((line, n) => (
-              <div
-                key={line.name}
-                className="absolute inset-0 will-change-transform"
-                style={{
-                  transform: n
-                    ? `translateY(clamp(0%, calc((${n} - 0.3 - var(--p) * ${steps}) * 180%), 110%))`
-                    : undefined,
-                }}
-              >
-                {card(line, n)}
+        <div className="container-page w-full">
+          <Eyebrow className="mb-6">{t.businesses}</Eyebrow>
+          <div className="grid h-[min(78svh,50rem)] short:h-[calc(100svh-6rem-2.75rem)] w-full grid-cols-2 gap-4">
+            <div className="bg-text-primary text-surface-base relative flex flex-col justify-between overflow-hidden rounded-sm p-10 xl:p-14">
+              {businessLines.map((line, n) => (
+                <Image
+                  key={line.name}
+                  src={line.image}
+                  alt={line.alt}
+                  fill
+                  sizes="50vw"
+                  className="object-cover"
+                  style={{
+                    opacity: n
+                      ? `clamp(0, calc((var(--p) * ${steps} - ${n} + 0.9) * 1.6), 1)`
+                      : undefined,
+                  }}
+                />
+              ))}
+              <div className="from-text-primary/80 to-text-primary/70 absolute inset-0 bg-linear-to-b via-transparent" />
+              <div className="relative">{heading}</div>
+              <div className="bg-surface-base/15 relative h-0.5">
+                <div
+                  className="bg-surface-base absolute inset-0 origin-left"
+                  style={{
+                    transform: `scaleX(calc(${1 / businessLines.length} + var(--p) * ${steps / businessLines.length}))`,
+                  }}
+                />
               </div>
-            ))}
+            </div>
+
+            <div className="relative overflow-hidden rounded-sm">
+              {businessLines.map((line, n) => (
+                <div
+                  key={line.name}
+                  className="absolute inset-0 will-change-transform"
+                  style={{
+                    transform: n
+                      ? `translateY(clamp(0%, calc((${n} - 0.3 - var(--p) * ${steps}) * 180%), 110%))`
+                      : undefined,
+                  }}
+                >
+                  {card(line, n)}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </Pinned>
 
       <section className="container-page space-y-3 lg:hidden">
+        <Eyebrow className="pb-3">{t.businesses}</Eyebrow>
         <div className="bg-text-primary text-surface-base relative flex aspect-4/3 items-end overflow-hidden rounded-sm p-6 md:aspect-video md:p-10">
-          <Image src={businessLines[0].image} alt={businessLines[0].alt} fill sizes="100vw" className="object-cover" />
+          <Image
+            src={businessLines[0].image}
+            alt={businessLines[0].alt}
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
           <div className="from-text-primary/80 absolute inset-0 bg-linear-to-t to-transparent" />
           <div className="relative">{heading}</div>
         </div>

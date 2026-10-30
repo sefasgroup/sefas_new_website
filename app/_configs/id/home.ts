@@ -38,7 +38,7 @@ export const stats: Widen<typeof en.stats> = [
   { value: 6000, suffix: "+", label: "Pelanggan" },
   { value: 21, suffix: "", label: "Kantor dan gudang di seluruh Indonesia" },
   { value: 29, suffix: "", label: "Tahun pengalaman" },
-  { value: 700, suffix: "+", label: "Karyawan terpercaya" },
+  { value: 700, suffix: "+", label: "Karyawan" },
 ];
 
 export const businessLines: Widen<typeof en.businessLines> = [
