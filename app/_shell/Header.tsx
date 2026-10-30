@@ -76,17 +76,29 @@ export function Header() {
         )}
       >
         <div className="flex h-14 items-center justify-between gap-6 pr-2 pl-4">
-          <Link href={lp("/")} aria-label={t.header.home}>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <Link href={lp("/")} aria-label={t.header.home}>
+              <Image
+                src={logo}
+                alt="SEFAS"
+                width={1200}
+                height={213}
+                sizes="8.5rem"
+                className="h-6 w-auto"
+                priority
+              />
+            </Link>
+            <span aria-hidden className="h-6 w-px bg-current opacity-25" />
             <Image
-              src={logo}
-              alt="SEFAS"
-              width={1200}
-              height={213}
-              sizes="8.5rem"
-              className="h-6 w-auto"
+              src={onDark ? "/images/brand/img-shell-licensee-white.png" : "/images/brand/img-shell-licensee.png"}
+              alt="Shell Licensee"
+              width={623}
+              height={128}
+              sizes="7rem"
+              className="h-5 w-auto sm:h-6"
               priority
             />
-          </Link>
+          </div>
 
           <nav aria-label={t.header.main} className="hidden items-center gap-7 lg:flex">
             {nav.map((item) => (
