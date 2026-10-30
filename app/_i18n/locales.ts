@@ -21,10 +21,6 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://sefasgroup.
 
 const OG_LOCALE = { en: "en_US", id: "id_ID" } as const satisfies Record<Lang, string>;
 
-const OG_ALT = {
-  en: "SEFAS Group — Built on Trust. Driven by Progress.",
-  id: "SEFAS Group — Berlandaskan Kepercayaan. Terus Bergerak Maju.",
-} as const satisfies Record<Lang, string>;
 
 export function pageMeta(lang: Lang, path: string, title: string, fullDescription: string) {
   const description =
@@ -44,7 +40,7 @@ export function pageMeta(lang: Lang, path: string, title: string, fullDescriptio
       alternateLocale: OG_LOCALE[lang === "en" ? "id" : "en"],
       title,
       description,
-      images: [{ url: `/images/og/og-${lang}.jpg`, width: 1200, height: 630, alt: OG_ALT[lang] }],
+      images: [{ url: `/images/og/og-${lang}.jpg`, width: 1200, height: 630, alt: "SEFAS Group — Built on Trust. Driven by Progress." }],
     },
   };
 }

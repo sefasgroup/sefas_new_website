@@ -252,7 +252,7 @@ const en = {
 
 const id: Widen<typeof en> = {
   site: {
-    title: "SEFAS Group — Berlandaskan Kepercayaan. Terus Bergerak Maju.",
+    title: "SEFAS Group — Built on Trust. Driven by Progress.",
     description:
       "Didirikan di Indonesia pada tahun 1997, SEFAS Group telah berkembang dari bisnis distribusi pelumas menjadi grup usaha terdiversifikasi dengan bidang usaha yang mencakup solusi industri, energi dan ritel bahan bakar, perkapalan, serta distribusi.",
     pageTitle: (page: string) => `${page} — SEFAS Group`,
