@@ -136,9 +136,76 @@ Environment variables tersimpan di Setup Node.js App, jadi tidak perlu diisi ula
 
 Rename `app` menjadi `app-broken` dan `app-prev` menjadi `app`, lalu **Restart**.
 
+## Pindah ke production (sefasgroup.com)
+
+Website lama (Laravel) dan website baru ada di akun cPanel yang sama, jadi DNS tidak diubah. Perpindahannya: isi `public_html` lama dipindah ke folder cadangan, lalu Setup Node.js App diarahkan ke `sefasgroup.com`. Website tidak bisa dibuka beberapa menit selama proses ini, jadi pilih jam sepi.
+
+Setelah pindah, semua halaman lama (produk, blog, karir, kontak, `/admin`) diarahkan ke beranda. Ini perilaku mode `HOME_ONLY` dari vendor (`app/_configs/launch.ts`). Hanya brosur PDF yang perlu diselamatkan secara khusus (lihat P3).
+
+### Persiapan (beberapa hari sebelumnya)
+
+**P1. Kode.** Production sebaiknya memakai `main` vendor. Kalau `VENDOR_COMMIT.txt` masih `ref: develop`, minta vendor merge ke `main`, lalu jalankan `bash sync-vendor.sh main` dan `git push`.
+
+**P2. Email.** Pengirim harus akun Google Workspace `@sefasgroup.com` dengan App Password baru. Akun gmail.com ditandai spam oleh Workspace. Isi variabel baru di aplikasi staging, Restart, kirim form, lalu pastikan di Admin Console → *Email Log Search* statusnya *Delivered* tanpa spam.
+
+**P3. Brosur PDF.** Katalog menautkan 15 brosur ke `https://sefasgroup.com/upload/products/brochures/*.pdf` (`app/_configs/catalogue.ts`). File itu sekarang ada di website lama, jadi harus tetap tersedia setelah pindah. Uji dulu cara mana yang berlaku di server ini:
+
+1. Upload file `tes.txt` berisi teks apa saja ke `/home/sefasgro/staging.sefasgroup.com/`.
+2. Buka `https://staging.sefasgroup.com/tes.txt`.
+   - Kalau isi file tampil, pakai **cara A**: brosur cukup ditaruh di `public_html/upload/products/brochures/`. Server menyajikannya langsung, dan file tidak terpengaruh saat update aplikasi.
+   - Kalau yang muncul halaman website baru, pakai **cara B**: brosur ditaruh di `/home/sefasgro/sefas-landing/app/public/upload/products/brochures/`, lalu Restart. Cara ini sudah diuji. Kekurangannya, setiap kali update folder `upload` harus disalin dari `app-prev/public/` ke `app/public/` sebelum Restart.
+3. Hapus `tes.txt`.
+
+**P4. Isi `public_html`.** Buka cPanel → **Domains** dan lihat kolom *Document Root* setiap domain dan subdomain. Kalau ada yang document root-nya **di dalam** `public_html` (misalnya `public_html/career`), folder itu **tidak boleh** ikut dipindah. Cek juga cPanel → **Cron Jobs**: catat dan nonaktifkan job milik website lama saat hari H.
+
+**P5. Paket production.** Jalankan workflow **cPanel Package** dengan `site_url` `https://sefasgroup.com` dan **noindex tidak dicentang**. Buat folder `/home/sefasgro/sefas-landing`, lalu upload dan extract zip ke sana sehingga ada `sefas-landing/app/server.js`. Langkah ini belum mengubah website lama.
+
+### Hari H
+
+1. **Backup.** cPanel → **Backup** → *Download a Home Directory Backup* dan *Download a MySQL Database Backup* untuk database website lama. Simpan di PC. Ini jaring pengaman terakhir.
+2. **Pindahkan website lama.** File Manager → aktifkan *Show Hidden Files* → buat folder `/home/sefasgro/old-site`. Buka `public_html`, pilih semua isinya (termasuk `.htaccess`) **kecuali** folder milik subdomain dari P4, lalu **Move** ke `/home/sefasgro/old-site`. Mulai dari sini website tidak bisa dibuka.
+3. **Brosur.**
+   - Cara A: buat `public_html/upload/products/brochures/` dan salin PDF dari `old-site/upload/products/brochures/` ke situ.
+   - Cara B: salin folder brosur yang sama ke `sefas-landing/app/public/upload/products/brochures/`.
+
+   Pakai **Copy**, bukan Move, supaya `old-site` tetap utuh untuk rollback.
+4. **Buat aplikasi.** Setup Node.js App → **Create Application**:
+
+   | Isian | Nilai |
+   |---|---|
+   | Node.js version | 24.x |
+   | Application mode | Production |
+   | Application root | `sefas-landing` |
+   | Application URL | `sefasgroup.com` |
+   | Application startup file | `app/server.js` |
+
+   Isi environment variables seperti tabel di langkah 3 (salin dari aplikasi staging, dengan pengirim dari P2). Lalu klik **Create**, **Save**, dan **Restart**.
+5. **HTTPS dan www.** cPanel → **Domains** → aktifkan **Force HTTPS Redirect** untuk `sefasgroup.com`. Aplikasi tidak mengalihkan `http://` ke `https://` dengan sendirinya. Website lama melakukannya lewat `.htaccess`, yang sekarang sudah dipindah. Sebaiknya coba dulu di `staging.sefasgroup.com` saat persiapan. Saat ini `http://staging.sefasgroup.com` belum dialihkan.
+6. **Cron Jobs.** Nonaktifkan job website lama (P4).
+
+### Cek setelah pindah
+
+1. `https://sefasgroup.com/api/health` menampilkan `{"status":"ok"}`.
+2. `/` dan `/id` tampil, tombol ganti bahasa berfungsi.
+3. `http://sefasgroup.com` dialihkan ke `https://`.
+4. Buka 2–3 brosur dari katalog, misalnya `https://sefasgroup.com/upload/products/brochures/shell-tellus.pdf`.
+5. `/robots.txt` dan `/sitemap.xml` memakai `https://sefasgroup.com`, dan **tidak ada** header `X-Robots-Tag: noindex`. Cek di DevTools → Network → dokumen → Response Headers.
+6. Kirim form kontak dari versi Inggris dan Indonesia, lalu pastikan keduanya masuk ke inbox.
+7. `https://career.sefasgroup.com` dan subdomain lain masih jalan.
+8. Google Search Console: kirim ulang `https://sefasgroup.com/sitemap.xml`.
+
+### Rollback ke website lama
+
+1. Setup Node.js App → aplikasi `sefasgroup.com` → **Stop App**.
+2. File Manager → `public_html`: hapus `.htaccess` dan folder `upload` buatan langkah 3, lalu pindahkan semua isi `old-site` kembali ke `public_html`.
+3. Buka `https://sefasgroup.com` dan pastikan website lama tampil.
+
+Folder `old-site` dan aplikasi staging boleh dihapus setelah website baru berjalan stabil beberapa minggu.
+
 ## Hal yang perlu diperhatikan
 
-- **Domain yang sedang dipakai website lama.** Kalau Application URL diarahkan ke domain yang sudah berisi website, cPanel mengganti `.htaccess` di document root dan website lama tidak tampil lagi. Katalog produk menautkan brosur PDF ke `https://sefasgroup.com/upload/products/brochures/` (`app/_configs/catalogue.ts`). Cek dulu bahwa path itu tetap bisa dibuka setelah pindah, sebelum go-live. Sebaiknya uji dulu di subdomain staging.
+- **Domain yang sedang dipakai website lama.** Kalau Application URL diarahkan ke domain yang sudah berisi website, cPanel mengganti `.htaccess` di document root dan website lama tidak tampil lagi. Ikuti urutan di bagian *Pindah ke production*, termasuk penyelamatan brosur PDF.
+- **HSTS `includeSubDomains`.** Di production, aplikasi mengirim `Strict-Transport-Security: max-age=63072000; includeSubDomains`. Setelah pernah membuka sefasgroup.com, browser hanya mau membuka **semua** subdomain `*.sefasgroup.com` lewat HTTPS selama 2 tahun. Pastikan setiap subdomain yang dipakai punya SSL yang valid (cPanel → *SSL/TLS Status*).
 - **Rate limit form kontak.** Batas 5 pesan/menit dan 20 pesan/jam dihitung per IP dari header `X-Forwarded-For`. Kalau server hosting tidak meneruskan IP asli pengunjung, semua pengunjung terhitung sebagai satu IP. Akibatnya batas itu berlaku untuk seluruh website. Gejalanya: form menolak pesan (429) padahal pengirimnya berbeda-beda.
 - **Restart menghapus hitungan rate limit**, karena disimpan di memori.
 - **Jangan upload file `.env`** ke server. Kredensial cukup disimpan di environment variables Setup Node.js App.
